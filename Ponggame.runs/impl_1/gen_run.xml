@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558249237">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558253961">
   <File Type="BITSTR-BMM" Name="z80_tester_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="z80_tester_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="z80_tester_timing_summary_init.rpt"/>

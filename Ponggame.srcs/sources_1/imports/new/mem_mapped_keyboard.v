@@ -25,7 +25,7 @@ reg [3:0] num0,num1,num2,num3;
 reg [3:0] A,B,OP;
 wire targetClk;
 reg CLK50MHZ=0;
-reg  [15:0] keycodev=0;
+wire  [15:0] keycodev;
 wire [15:0] keycode;
 wire flag;
 reg cn = 0;
@@ -36,7 +36,7 @@ reg [15:0] addr = 16'b0000000000000000;
 //START VGA BLOCK
     reg [11:0] rgb_reg = 12'b000000000000;
     wire video_on;
-    wire vsync,hsync; //hsync means a row has been displayed
+//    wire vsync,hsync; //hsync means a row has been displayed
     wire p_tick; //Switching pixel
     wire [9:0] x,y;
     reg [9:0] reg_x,reg_y = 12'b000000000000;
@@ -60,9 +60,19 @@ assign data=(wr==0) ? data_out:32'bz;
 
 //START PS2 Keyboard Block
 
-begin
-     keyboard kb(clk,PS2Data,PS2Clk,keycode,keycodev);
-end
+reg	[1:0] clk_transfer;
+always @(posedge clk)
+	clk_transfer <= { clk_transfer[0], PS2Data};
+   
+wire	ck_sck; // Our version of the SCK signal, having gone through the clock transfer
+assign	ck_sck = clk_transfer[1];
+
+reg	ck_stb;	// True on any positive edge of the clock
+always @(posedge clk)
+	ck_stb <= (clk_transfer[1:0] == 2'b01);
+
+keyboard kb(clk,ck_stb,PS2Clk,keycode,keycodev);
+
 //START quad7seg
 wire [18:0] tclk;
 assign tclk[0] = clk;

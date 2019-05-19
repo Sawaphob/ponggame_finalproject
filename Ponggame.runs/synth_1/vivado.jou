@@ -2,10 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun May 19 14:00:45 2019
-# Process ID: 13996
+# Start of session at: Sun May 19 15:19:27 2019
+# Process ID: 5156
 # Current directory: C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.runs/synth_1
 # Command line: vivado.exe -log z80_tester.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source z80_tester.tcl
 # Log file: C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.runs/synth_1/z80_tester.vds
 # Journal file: C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
+source z80_tester.tcl -notrace
