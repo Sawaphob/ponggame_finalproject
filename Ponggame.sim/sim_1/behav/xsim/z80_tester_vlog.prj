@@ -1,0 +1,58 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Z80.srcs/sources_1/imports/x" --include "../../../../../a-z80_latest/a-z80/trunk/cpu/x" \
+"../../../../Z80.srcs/sources_1/imports/imports/hdl/PS2Receiver.v" \
+"../../../../Z80.srcs/sources_1/imports/x/address_latch.v" \
+"../../../../Z80.srcs/sources_1/imports/x/address_mux.v" \
+"../../../../Z80.srcs/sources_1/imports/x/address_pins.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_bit_select.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_control.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_core.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_flags.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_mux_2.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_mux_2z.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_mux_3z.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_mux_4.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_mux_8.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_prep_daa.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_select.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_shifter_core.v" \
+"../../../../Z80.srcs/sources_1/imports/x/alu_slice.v" \
+"../../../../Z80.srcs/sources_1/new/blackOrWhite.v" \
+"../../../../Z80.srcs/sources_1/imports/x/bus_control.v" \
+"../../../../Z80.srcs/sources_1/imports/x/bus_switch.v" \
+"../../../../Z80.srcs/sources_1/imports/x/clk_delay.v" \
+"../../../../Z80.srcs/sources_1/imports/imports/new/clockDiv.v" \
+"../../../../Z80.srcs/sources_1/imports/x/control_pins_n.v" \
+"../../../../Z80.srcs/sources_1/imports/x/data_pins.v" \
+"../../../../Z80.srcs/sources_1/imports/x/data_switch.v" \
+"../../../../Z80.srcs/sources_1/imports/x/data_switch_mask.v" \
+"../../../../Z80.srcs/sources_1/imports/imports/hdl/debouncer.v" \
+"../../../../Z80.srcs/sources_1/imports/x/decode_state.v" \
+"../../../../Z80.srcs/sources_1/imports/x/execute.v" \
+"../../../../Z80.srcs/sources_1/imports/x/inc_dec.v" \
+"../../../../Z80.srcs/sources_1/imports/x/inc_dec_2bit.v" \
+"../../../../Z80.srcs/sources_1/imports/x/interrupts.v" \
+"../../../../Z80.srcs/sources_1/imports/x/ir.v" \
+"../../../../Z80.srcs/sources_1/imports/new/mem_mapped_keyboard.v" \
+"../../../../Z80.srcs/sources_1/imports/x/memory_ifc.v" \
+"../../../../Z80.srcs/sources_1/imports/x/pin_control.v" \
+"../../../../Z80.srcs/sources_1/new/pixelSegment.v" \
+"../../../../Z80.srcs/sources_1/imports/x/pla_decode.v" \
+"../../../../Z80.srcs/sources_1/imports/imports/new/quadSevenSeg.v" \
+"../../../../Z80.srcs/sources_1/imports/x/reg_control.v" \
+"../../../../Z80.srcs/sources_1/imports/x/reg_file.v" \
+"../../../../Z80.srcs/sources_1/imports/x/reg_latch.v" \
+"../../../../Z80.srcs/sources_1/imports/x/resets.v" \
+"../../../../Z80.srcs/sources_1/imports/imports/new/segmentDecoder.v" \
+"../../../../Z80.srcs/sources_1/imports/x/sequencer.v" \
+"../../../../Z80.srcs/sources_1/imports/new/vga_sync.v" \
+"../../../../Z80.srcs/sources_1/new/whichSegment.v" \
+"../../../../Z80.srcs/sources_1/imports/x/z80_top_direct_n.v" \
+"../../../../Z80.srcs/sources_1/new/z80_tester.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

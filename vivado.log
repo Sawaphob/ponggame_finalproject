@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 19 09:26:11 2019
+# Process ID: 6344
+# Current directory: C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6232 C:\Users\Sawaphob Chavana\Desktop\hw-syn-lab-project-master - Copy\Ponggame.xpr
+# Log file: C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master - Copy/vivado.log
+# Journal file: C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master - Copy/Ponggame.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 730.285 ; gain = 127.570
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 19 09:27:16 2019...

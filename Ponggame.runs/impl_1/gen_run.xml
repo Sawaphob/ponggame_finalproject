@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558193294">
+  <File Type="BITSTR-BMM" Name="z80_tester_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="z80_tester_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="z80_tester_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="z80_tester_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="z80_tester.tcl"/>
+  <File Type="OPT-TIMING" Name="z80_tester_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="z80_tester_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="z80_tester_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="z80_tester_reports.tcl"/>
+  <File Type="OPT-DRC" Name="z80_tester_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="z80_tester.hwdef"/>
+  <File Type="PWROPT-DCP" Name="z80_tester_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="z80_tester_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="z80_tester_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="z80_tester_placed.dcp"/>
+  <File Type="PLACE-IO" Name="z80_tester_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="z80_tester_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="z80_tester_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="z80_tester_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="z80_tester_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="z80_tester_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="z80_tester_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="z80_tester.bgn"/>
+  <File Type="PLACE-TIMING" Name="z80_tester_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="z80_tester_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="z80_tester.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="z80_tester_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="z80_tester_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="z80_tester_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="z80_tester.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="z80_tester_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="z80_tester_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="z80_tester_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="z80_tester_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="z80_tester_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="z80_tester_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="z80_tester.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="z80_tester_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="z80_tester.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="z80_tester_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="z80_tester_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="z80_tester.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="z80_tester_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="z80_tester_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="z80_tester_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="z80_tester_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="z80_tester_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="z80_tester_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="z80_tester_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="z80_tester_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="z80_tester_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="z80_tester_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="z80_tester_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="z80_tester_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="z80_tester_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="z80_tester_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="z80_tester_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="z80_tester_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="z80_tester_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="z80_tester_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="z80_tester_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="z80_tester.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="z80_tester_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="z80_tester.rbt"/>
+  <File Type="BITSTR-NKY" Name="z80_tester.nky"/>
+  <File Type="BG-DRC" Name="z80_tester.drc"/>
+  <File Type="RDI-RDI" Name="z80_tester.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/imports/hdl/PS2Receiver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys-3-Keyboard-2018.2-3/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/hdl/PS2Receiver.v"/>
+        <Attr Name="ImportTime" Val="1535348632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/address_latch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/address_latch.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/address_mux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/address_mux.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/address_pins.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/address_pins.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_bit_select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_bit_select.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_control.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_core.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_flags.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_flags.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_mux_2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_mux_2.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_mux_2z.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_mux_2z.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_mux_3z.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_mux_3z.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_mux_4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_mux_4.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_mux_8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_mux_8.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_prep_daa.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_prep_daa.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_select.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_shifter_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_shifter_core.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/alu_slice.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/alu_slice.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/bus_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/bus_control.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/bus_switch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/bus_switch.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/clk_delay.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/clk_delay.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/new/clockDiv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys-3-Keyboard-2018.2-3/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/new/clockDiv.v"/>
+        <Attr Name="ImportTime" Val="1552256604"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/control_pins_n.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/control_pins_n.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/data_pins.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/data_pins.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/data_switch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/data_switch.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/data_switch_mask.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/data_switch_mask.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/hdl/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys-3-Keyboard-2018.2-3/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/hdl/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1535348632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/decode_state.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/decode_state.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/exec_module.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/exec_module.vh"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/temp_wires.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/temp_wires.vh"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/exec_zero.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/exec_zero.vh"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/exec_matrix_compiled.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/exec_matrix_compiled.vh"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/execute.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/execute.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/inc_dec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/inc_dec.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/inc_dec_2bit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/inc_dec_2bit.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/interrupts.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/interrupts.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/ir.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/ir.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mem_mapped_keyboard.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys-3-Keyboard-2018.2-3/vivado_proj/Basys-3-Keyboard.srcs/sources_1/new/mem_mapped_keyboard.v"/>
+        <Attr Name="ImportTime" Val="1556435203"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/memory_ifc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/memory_ifc.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/pin_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/pin_control.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/pla_decode.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/pla_decode.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/new/quadSevenSeg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys-3-Keyboard-2018.2-3/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/new/quadSevenSeg.v"/>
+        <Attr Name="ImportTime" Val="1552256604"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/reg_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/reg_control.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/reg_file.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/reg_file.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/reg_latch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/reg_latch.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/resets.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/resets.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/screenrom.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/new/segmentDecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys-3-Keyboard-2018.2-3/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/new/segmentDecoder.v"/>
+        <Attr Name="ImportTime" Val="1552256604"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/sequencer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/sequencer.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/vga_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab6/Lab6.srcs/sources_1/new/vga_sync.v"/>
+        <Attr Name="ImportTime" Val="1553912944"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/core.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/core.vh"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/globals.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/globals.vh"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/coremodules.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/coremodules.vh"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/z80_top_direct_n.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/z80_top_direct_n.v"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/z80_tester.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/blackOrWhite.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pixelSegment.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/whichSegment.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/segmentTest.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/x/exec_matrix.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/exec_matrix.vh"/>
+        <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/globals.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/exec_matrix_compiled.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/exec_zero.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/exec_module.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/temp_wires.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/coremodules.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/core.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="z80_tester"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Basys3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

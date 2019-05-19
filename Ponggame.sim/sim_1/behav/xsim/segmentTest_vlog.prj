@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Z80.srcs/sources_1/imports/x" --include "../../../../../a-z80_latest/a-z80/trunk/cpu/x" \
+"../../../../Z80.srcs/sources_1/new/pixelSegment.v" \
+"../../../../Z80.srcs/sources_1/new/whichSegment.v" \
+"../../../../Z80.srcs/sources_1/new/segmentTest.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
