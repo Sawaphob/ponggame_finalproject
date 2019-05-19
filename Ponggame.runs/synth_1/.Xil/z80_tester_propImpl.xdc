@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/constrs_1/new/Basys3.xdc} rfile:../../../Z80.srcs/constrs_1/new/Basys3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/constrs_1/new/Basys3.xdc rfile:../../../Ponggame.srcs/constrs_1/new/Basys3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

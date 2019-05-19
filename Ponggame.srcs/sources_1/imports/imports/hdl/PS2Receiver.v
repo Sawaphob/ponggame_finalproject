@@ -33,7 +33,7 @@ module PS2Receiver(
     reg [7:0]dataprev=0;
     reg [3:0]cnt=0;
     reg flag=0;
-    
+
 debouncer #(
     .COUNT_MAX(19),
     .COUNT_WIDTH(5)

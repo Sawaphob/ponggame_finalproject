@@ -17,84 +17,79 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.xpr} [current_project]
+set_property webtalk.parent_dir C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.cache/wt [current_project]
+set_property parent.project_path C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo {c:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.cache/ip} [current_project]
+set_property ip_output_repo c:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog {
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/exec_module.vh}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/temp_wires.vh}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/exec_zero.vh}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/exec_matrix_compiled.vh}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/core.vh}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/globals.vh}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/coremodules.vh}
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/exec_module.vh
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/temp_wires.vh
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/exec_zero.vh
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/exec_matrix_compiled.vh
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/core.vh
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/globals.vh
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/coremodules.vh
 }
-set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/exec_module.vh}}]
-set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/temp_wires.vh}}]
-set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/exec_zero.vh}}]
-set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/exec_matrix_compiled.vh}}]
-set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/core.vh}}]
-set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/globals.vh}}]
-set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/coremodules.vh}}]
-read_mem {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/new/data.mem}}
+read_mem C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/new/data.mem
 read_verilog -library xil_defaultlib {
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/imports/hdl/PS2Receiver.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/address_latch.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/address_mux.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/address_pins.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_bit_select.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_control.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_core.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_flags.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_mux_2.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_mux_2z.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_mux_3z.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_mux_4.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_mux_8.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_prep_daa.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_select.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_shifter_core.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/alu_slice.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/bus_control.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/bus_switch.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/clk_delay.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/imports/new/clockDiv.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/control_pins_n.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/data_pins.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/data_switch.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/data_switch_mask.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/imports/hdl/debouncer.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/decode_state.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/execute.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/inc_dec.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/inc_dec_2bit.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/interrupts.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/ir.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/new/mem_mapped_keyboard.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/memory_ifc.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/pin_control.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/pla_decode.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/imports/new/quadSevenSeg.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/reg_control.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/reg_file.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/reg_latch.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/resets.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/new/screenrom.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/imports/new/segmentDecoder.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/sequencer.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/new/vga_sync.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/imports/x/z80_top_direct_n.v}
-  {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/sources_1/new/z80_tester.v}
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/hdl/PS2Receiver.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/address_latch.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/address_mux.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/address_pins.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_bit_select.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_control.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_core.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_flags.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_mux_2.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_mux_2z.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_mux_3z.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_mux_4.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_mux_8.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_prep_daa.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_select.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_shifter_core.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/alu_slice.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/bus_control.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/bus_switch.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/clk_delay.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/clockDiv.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/control_pins_n.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/data_pins.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/data_switch.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/data_switch_mask.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/hdl/debouncer.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/decode_state.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/execute.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/inc_dec.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/inc_dec_2bit.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/interrupts.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/ir.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/new/kbInterrupt.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/memory_ifc.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/pin_control.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/pla_decode.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/quadSevenSeg.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/reg_control.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/reg_file.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/reg_latch.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/resets.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/new/screenrom.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/segmentDecoder.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/sequencer.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/vga_sync.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/z80_top_direct_n.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -104,8 +99,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/constrs_1/new/Basys3.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/constrs_1/new/Basys3.xdc}}]
+read_xdc C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/constrs_1/new/Basys3.xdc
+set_property used_in_implementation false [get_files C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/constrs_1/new/Basys3.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

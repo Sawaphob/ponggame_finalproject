@@ -59,39 +59,10 @@ reg	[DATA_WIDTH-1:0]	data_out;
 assign data=(wr==0) ? data_out:32'bz;
 
 //START PS2 Keyboard Block
-always @(posedge(clk))begin
-    CLK50MHZ<=~CLK50MHZ;
+
+begin
+     keyboard kb(clk,PS2Data,PS2Clk,keycode,keycodev);
 end
-    
-    PS2Receiver uut (
-    .clk(CLK50MHZ),
-    .kclk(PS2Clk),
-    .kdata(PS2Data),
-    .keycode(keycode),
-    .oflag(flag)
-    );
-    
-    
-always@(keycode)
-    if (keycode[7:0] == 8'hf0) begin
-        cn <= 1'b0;
-        bcount <= 3'd0;
-    end else if (keycode[15:8] == 8'hf0) begin
-        cn <= keycode != keycodev;
-        bcount <= 3'd5;
-    end else begin
-        cn <= keycode[7:0] != keycodev[7:0] || keycodev[15:8] == 8'hf0;
-        bcount <= 3'd2;
-    end
-
-always@(posedge clk)
-    if (flag == 1'b1 && cn == 1'b1) begin
-        start <= 1'b1;
-        keycodev <= keycode;
-    end else
-        start <= 1'b0;
-
-
 //START quad7seg
 wire [18:0] tclk;
 assign tclk[0] = clk;

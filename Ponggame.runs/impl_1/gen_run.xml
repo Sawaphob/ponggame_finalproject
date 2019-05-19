@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558193294">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558246022">
   <File Type="BITSTR-BMM" Name="z80_tester_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="z80_tester_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="z80_tester_timing_summary_init.rpt"/>
@@ -395,6 +395,13 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../a-z80_latest/a-z80/trunk/cpu/x/ir.v"/>
         <Attr Name="ImportTime" Val="1555680510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/kbInterrupt.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

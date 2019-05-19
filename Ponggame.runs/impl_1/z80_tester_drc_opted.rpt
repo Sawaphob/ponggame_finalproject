@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat May 18 22:39:55 2019
-| Host         : DESKTOP-5DO16DV running 64-bit major release  (build 9200)
+| Date         : Sun May 19 13:30:35 2019
+| Host         : Natthapong-Laptop running 64-bit major release  (build 9200)
 | Command      : report_drc -file z80_tester_drc_opted.rpt -pb z80_tester_drc_opted.pb -rpx z80_tester_drc_opted.rpx
 | Design       : z80_tester
 | Device       : xc7a35tcpg236-1
