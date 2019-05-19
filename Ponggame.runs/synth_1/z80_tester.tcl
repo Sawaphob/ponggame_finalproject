@@ -74,7 +74,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/inc_dec_2bit.v
   C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/interrupts.v
   C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/ir.v
-  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/new/kbInterrupt.v
+  C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/new/keyboard.v
   C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v
   C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/memory_ifc.v
   C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/pin_control.v

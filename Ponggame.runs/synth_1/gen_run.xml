@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558246022">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558249236">
   <File Type="PA-TCL" Name="z80_tester.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="z80_tester_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="z80_tester_reports.tcl"/>
@@ -340,7 +340,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/kbInterrupt.v">
+    <File Path="$PSRCDIR/sources_1/new/keyboard.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
