@@ -8,7 +8,7 @@ module z80_tester(
     input wire [11:0] sw,
     input wire btnU,
     input wire btnL,
-    output [15:0] led,
+    output [1:0] led,
     output [6:0] seg,
     output [3:0] an,
     output dp,
@@ -23,8 +23,8 @@ module z80_tester(
     reg nBUSRQ = 1'b1;
 
     wire nM1,nMREQ,nIORQ,nRD,nWR,nRFSH,nHALT,nBUSACK;
-
-    wire [15:0] A;
+    wire state;
+    wire [1:0] A;
     wire [7:0] D;
     
     wire RamWE;
@@ -41,8 +41,8 @@ module z80_tester(
     end endgenerate
     clockDiv fdivTarget(targetClk,tclk[22]);
     
-    z80_top_direct_n cpu(nM1,nMREQ,nIORQ,nRD,nWR, nRFSH,nHALT,nBUSACK,nWAIT,nINT,nNMI,nRESET,nBUSRQ,targetClk,A,D);
+    z80_top_direct_n cpu(nM1,nMREQ,nIORQ,nRD,nWR, nRFSH,nHALT,nBUSACK,nWAIT,nINT,nNMI,nRESET,nBUSRQ,targetClk,D);
 
-    mem_mapped_keyboard mem(D,A,PS2Data,PS2Clk,RamWE,clk,reset,sw,btnU,btnL,seg,an,dp,hsync,vsync,rgb);
-
+    mem_mapped_keyboard mem(D,A,PS2Data,PS2Clk,RamWE,clk,reset,sw,btnU,btnL,seg,an,dp,hsync,vsync,rgb,state);
+    led ledlight(led,state,targetClk);
 endmodule

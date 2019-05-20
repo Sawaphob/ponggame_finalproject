@@ -13,7 +13,8 @@ module mem_mapped_keyboard(
     output wire hsync, vsync,
 	output wire [11:0] rgb,
 	output reg [1:0] player1Action = 2'b0,
-	output reg [1:0] player2Action = 2'b0
+	output reg [1:0] player2Action = 2'b0,
+	output reg state
 );
     
     parameter DATA_WIDTH=8;
@@ -48,7 +49,7 @@ module mem_mapped_keyboard(
     wire p_tick;
     wire [9:0] x,y;
     reg [9:0] reg_x,reg_y = 12'b000000000000;
-    reg state = 1'b0;
+    //reg state = 1'b0;
     reg [11:0] topColor = 12'b000000000000;
     wire [11:0] start_rgb;
     wire [11:0] game_rgb;
@@ -105,6 +106,43 @@ module mem_mapped_keyboard(
         else
             start <= 1'b0;
     
+    always@(keycode) 
+        begin
+            if((keycode[15:8] == 8'hf0) && (keycode[7:0] == 8'h1c)) 
+                begin
+                    player1Action <= 2'b00;
+                end 
+            else if ((keycode[15:8] == 8'hf0) && (keycode[7:0] == 8'h1b)) 
+                begin
+                    player1Action <= 2'b00;
+                end 
+            else if ((keycode[15:8] != 8'hf0) && (keycode[7:0] == 8'h1c)) 
+                begin
+                    player1Action <= 2'b10;
+                end 
+            else if ((keycode[15:8] != 8'hf0) && (keycode[7:0] == 8'h1b)) 
+                begin
+                    player1Action <= 2'b01;
+                end
+    
+            if((keycode[15:8] == 8'hf0) && (keycode[7:0] == 8'h3b)) 
+                begin
+                    player2Action <= 2'b00;
+                end 
+            else if ((keycode[15:8] == 8'hf0) && (keycode[7:0] == 8'h42)) 
+                begin
+                    player2Action <= 2'b00;
+                end 
+            else if ((keycode[15:8] != 8'hf0) && (keycode[7:0] == 8'h3b)) 
+                begin
+                    player2Action <= 2'b10;
+                end 
+            else if ((keycode[15:8] != 8'hf0) && (keycode[7:0] == 8'h42)) 
+                begin
+                    player2Action <= 2'b01;
+                end
+        end
+    
     wire [18:0] tclk;
     assign tclk[0] = clk;
     genvar c;
@@ -142,7 +180,7 @@ module mem_mapped_keyboard(
                 16'h44B0 : data_out <= {7'b0000000,state};
                 16'h44A0 : data_out <= {7'b0000000,resetgame};
                 16'h4490 : data_out <= {4'b0000,left_score};
-                16'h4480 : data_out <= {7'b0000,right_score};
+                16'h4480 : data_out <= {7'b0000000,right_score};
                 16'h4470 : data_out <= timer;
                 16'h4460 : data_out <= {7'b0000000,acceralationX};
                 16'h4450 : data_out <= {7'b0000000,acceralationY};

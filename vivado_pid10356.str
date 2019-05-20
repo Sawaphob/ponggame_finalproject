@@ -1206,3 +1206,240 @@ typeControlKey(null, null, 'z');
 selectCodeEditor("gamepongrgb.v", 13, 386); // cl (w, cp)
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 187 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mem_mapped_keyboard.v", 1); // k (j, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 150, 143); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 154, 142); // cl (w, cp)
+// Elapsed time: 47 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 817 MB. GUI used memory: 52 MB. Current time: 5/20/19, 3:45:33 PM ICT
+// Elapsed time: 285 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 356, 321); // cl (w, cp)
+// Elapsed time: 411 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 411, 108); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 690, 238); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 690, 238, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+// Elapsed time: 393 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 329, 247); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 281, 242); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 489, 350); // cl (w, cp)
+// Elapsed time: 12 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v), cpu : z80_top_direct_n (z80_top_direct_n.v)]", 5); // B (D, cp)
+// Elapsed time: 823 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 387, 328); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 387, 328, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "mem_mapped_keyboard.v", 'c'); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "player2Action", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "player2Action"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "player2Action"); // l (aT, cp)
+// Elapsed time: 72 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 490, 317); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 817 MB. GUI used memory: 52 MB. Current time: 5/20/19, 4:15:33 PM ICT
+// Elapsed time: 18 seconds
+typeControlKey((HResource) null, "mem_mapped_keyboard.v", 'v'); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 490, 317, false, true, false, false, false); // cl (w, cp) - Control Key
+// Elapsed time: 20 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 631 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 315, 215); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 289, 213); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 326, 202); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 295, 190); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 296, 215); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 293, 182); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 296, 199); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 295, 175); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 278, 162); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 262, 140); // cl (w, cp)
+// Elapsed time: 1040 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 98, 211); // cl (w, cp)
+typeControlKey((HResource) null, "mem_mapped_keyboard.v", 'v'); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 143, 64); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 476, 91); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 518, 159); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 59, 199); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 30, 216); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 109, 196); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 138, 210); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 27, 261); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 87, 269); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 51, 242); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 524, 222); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 58, 264); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 53, 278); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 519, 301); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 57, 332); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 27, 345); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 79, 316); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mem_mapped_keyboard.v", 26, 312); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 55, 336); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 817 MB. GUI used memory: 52 MB. Current time: 5/20/19, 4:45:34 PM ICT
+selectCodeEditor("mem_mapped_keyboard.v", 475, 310); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 31, 360); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 142, 366); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 516, 385); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 518, 380); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 522, 382); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 39 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 193, 247); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 193, 247, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z80_tester.v", 2); // k (j, cp)
+selectCodeEditor("z80_tester.v", 105, 179); // cl (w, cp)
+// Elapsed time: 17 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v), cpu : z80_top_direct_n (z80_top_direct_n.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v), cpu : z80_top_direct_n (z80_top_direct_n.v), ir_ : ir (ir.v)]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("z80_top_direct_n.v", 161, 193); // cl (w, cp)
+selectCodeEditor("z80_top_direct_n.v", 20, 199); // cl (w, cp)
+selectCodeEditor("z80_top_direct_n.v", 27, 196); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z80_tester.v", 2); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mem_mapped_keyboard.v", 1); // k (j, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 324, 260); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 298, 269); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 170, 265); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 25, 259); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z80_top_direct_n.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mem_mapped_keyboard.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z80_top_direct_n.v", 3); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Run Command: PAResourceCommand.PACommandNames_TCL_CONSOLE_WINDOW
+// Elapsed time: 14 seconds
+selectCodeEditor("z80_tester.v", 238, 388); // cl (w, cp)
+selectCodeEditor("z80_tester.v", 443, 370); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("z80_tester.v", 30, 380); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("z80_tester.v", 65, 93); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("z80_tester.v", 85, 387); // cl (w, cp)
+selectCodeEditor("z80_tester.v", 510, 333); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("z80_tester.v", 197, 386); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 102 seconds
+selectCodeEditor("z80_tester.v", 84, 366); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("z80_tester.v", 218, 355); // cl (w, cp)
+selectCodeEditor("z80_tester.v", 203, 366); // cl (w, cp)
+selectCodeEditor("z80_tester.v", 203, 366, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("z80_tester.v", 146, 367); // cl (w, cp)
+selectCodeEditor("z80_tester.v", 146, 367, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("z80_tester.v", 96, 377); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 74 seconds
+selectCodeEditor("z80_tester.v", 102, 361); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("z80_tester.v", 57, 309); // cl (w, cp)
+// Elapsed time: 13 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "led"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/new/led.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/User/Desktop/Repos/ponggame_finalproject/Ponggame.srcs/sources_1/new/led.v 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led (led.v)]", 53, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led (led.v)]", 53, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("led.v", 98, 359); // cl (w, cp)
+selectCodeEditor("led.v", 32, 57); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectCodeEditor("led.v", 90, 79); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("led.v", 81, 195); // cl (w, cp)
+selectCodeEditor("led.v", 83, 92); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("led.v", 135, 79); // cl (w, cp)
+selectCodeEditor("led.v", 144, 103); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 38 seconds
+selectCodeEditor("led.v", 74, 55); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z80_tester.v", 2); // k (j, cp)
+selectCodeEditor("z80_tester.v", 99, 383); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 33 seconds
+selectCodeEditor("z80_tester.v", 76, 381); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("z80_tester.v", 131, 404); // cl (w, cp)
+selectCodeEditor("z80_tester.v", 369, 380); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "led.v", 3); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mem_mapped_keyboard.v", 1); // k (j, cp)
