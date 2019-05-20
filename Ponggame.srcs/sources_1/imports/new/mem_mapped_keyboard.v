@@ -14,7 +14,7 @@ module mem_mapped_keyboard(
 	output wire [11:0] rgb,
 	output reg [1:0] player1Action = 2'b0,
 	output reg [1:0] player2Action = 2'b0,
-	output reg state
+	output state
 );
     
     parameter DATA_WIDTH=8;
@@ -49,7 +49,7 @@ module mem_mapped_keyboard(
     wire p_tick;
     wire [9:0] x,y;
     reg [9:0] reg_x,reg_y = 12'b000000000000;
-    //reg state = 1'b0;
+    reg state = 1'b0;
     reg [11:0] topColor = 12'b000000000000;
     wire [11:0] start_rgb;
     wire [11:0] game_rgb;
@@ -152,7 +152,6 @@ module mem_mapped_keyboard(
         end
     endgenerate
     clockDiv fdivTarget(targetClk,tclk[18]);
-    
     quadSevenSeg q7seg(seg,dp,an,keycodev[3:0],keycodev[7:4],keycodev[11:8],keycodev[15:12],targetClk);
     
     generate
@@ -211,21 +210,14 @@ module mem_mapped_keyboard(
                 end
             else 
                 begin
-                    if(keycode[7:0] == 8'h29 && state == 0) // press spacebar to start
+                    if(keycode[7:0] == 8'h29 && state == 1'b0) // press spacebar to start
                         begin
-                            state <= 1'b1;
+                            state = 1'b1;
                         end
-                    /*if(state == 1)
+                    if(btnU && state == 1'b1)
                         begin
-                        if(keycode[7:0] == 8'h1C) // press A to move left padd up
-                            begin
-                                leftPaddlePos <= leftPaddlePos - 10'b0000000100;
-                            end
-                        if(keycode[7:0] == 8'h23) // press D to move left padd down
-                            begin
-                                leftPaddlePos <= leftPaddlePos + 10'b0000000100;
-                            end
-                        end*/
+                            state = 1'b0;
+                        end
                 end
         end
 endmodule

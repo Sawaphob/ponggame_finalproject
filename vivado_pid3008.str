@@ -1,0 +1,343 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 3008
+License: Customer
+
+Current time: 	Mon May 20 22:07:47 ICT 2019
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1600
+Screen resolution (DPI): 192
+Available screens: 1
+Available disk space: 5 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=24
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Sawaphob Chavana
+User home directory: C:/Users/Sawaphob Chavana
+User working directory: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Sawaphob Chavana/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Sawaphob Chavana/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Sawaphob Chavana/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/vivado.log
+Vivado journal file location: 	C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/vivado.jou
+Engine tmp dir: 	C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/.Xil/Vivado-3008-DESKTOP-5DO16DV
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 627 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Sawaphob Chavana\Desktop\ponggame_finalproject\Ponggame.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 109 MB (+112254kb) [00:00:08]
+// [Engine Memory]: 687 MB (+568990kb) [00:00:08]
+// [GUI Memory]: 116 MB (+1243kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  3108 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 704 MB. GUI used memory: 65 MB. Current time: 5/20/19, 10:07:51 PM ICT
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 731.359 ; gain = 123.074 
+// Project name: Ponggame; location: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject; part: xc7a35tcpg236-1
+// [Engine Memory]: 747 MB (+26389kb) [00:00:12]
+dismissDialog("Open Project"); // bx (cp)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 13895 ; 456 ; 0.0 ; 0 ; 0 ; Mon May 20 21:47:06 ICT 2019 ; 00:09:30 ; Vivado Synthesis Defaults (Vivado Synthesis 2018) ; Vivado Synthesis Default Reports (Vivado Synthesis 2018) ; xc7a35tcpg236-1 ; Vivado Synthesis Defaults", 0, "synth_design Complete!", 2, true); // ax (Q, cp) - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.4s
+// [Engine Memory]: 786 MB (+1735kb) [00:00:16]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 128 MB (+5942kb) [00:00:16]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, data.mem]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, data.mem]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, data2.mem]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, data2.mem]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("data2.mem", 132, 407); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data.mem", 1); // k (j, cp)
+selectCodeEditor("data.mem", 159, 400); // cl (w, cp)
+// [Engine Memory]: 830 MB (+4850kb) [00:00:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 830 MB. GUI used memory: 72 MB. Current time: 5/20/19, 10:08:19 PM ICT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Mon May 20 22:08:24 2019] Launched impl_1... Run output will be captured here: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectCodeEditor("data.mem", 873, 219); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 82 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 853 MB. GUI used memory: 74 MB. Current time: 5/20/19, 10:09:54 PM ICT
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// TclEventType: DESIGN_CLOSE
+// TclEventType: DESIGN_NEW_FAILED
+// [Engine Memory]: 911 MB (+41566kb) [00:02:16]
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. INFO: [Netlist 29-17] Analyzing 4212 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Common 17-344] 'open_run' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// 'dQ' command handler elapsed time: 4 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (C, cp)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_GRAPH, "Graph", 0); // f (C, cp)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Mon May 20 22:10:33 2019] Launched impl_1... Run output will be captured here: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cp): Run Synthesis: addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (C, I)
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Run Synthesis"); // A (cp)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// bx (cp):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 134 MB (+396kb) [00:03:12]
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bx (cp)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v)]", 3, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("z80_tester.v", 341, 344); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v), mem : mem_mapped_keyboard (mem_mapped_keyboard.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v), mem : mem_mapped_keyboard (mem_mapped_keyboard.v), vga_sync_unit : vga_sync (vga_sync.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 873, 248); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "state", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "state"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "state"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "state"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "state"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "state"); // l (aT, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 166, 260); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 695, 101); // cl (w, cp)
+// Elapsed time: 94 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data.mem", 1); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v), cpu : z80_top_direct_n (z80_top_direct_n.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v), cpu : z80_top_direct_n (z80_top_direct_n.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v), cpu : z80_top_direct_n (z80_top_direct_n.v), clk_delay_ : clk_delay (clk_delay.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v)]", 3, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("z80_tester.v", 1078, 245); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Mon May 20 22:15:08 2019] Launched synth_1... Run output will be captured here: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/synth_1/runme.log [Mon May 20 22:15:08 2019] Launched impl_1... Run output will be captured here: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 42 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aI (aF, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 530 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data.mem", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (C, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 85 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (C, cp)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUTRAM ; 32 ; 9600 ; 0.33333334", 1, "32", 1); // t (Q, cp)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUTRAM ; 32 ; 9600 ; 0.33333334", 1, "32", 1, false, false, false, false, true); // t (Q, cp) - Double Click
+// Elapsed time: 42 seconds
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "FF ; 457 ; 41600 ; 1.0985577", 2, (String) null, -1); // t (Q, cp)
+// Elapsed time: 160 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running route_design... ;  ;  ;  ;  ;  ;  ;  ; 13920 ; 457 ; 0.0 ; 0 ; 0 ; Mon May 20 22:24:53 ICT 2019 ; 00:05:01 ; Vivado Implementation Defaults (Vivado Implementation 2018) ; Vivado Implementation Default Reports (Vivado Implementation 2018) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, (String) null, 9, false); // ax (Q, cp)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running route_design... ;  ;  ;  ;  ;  ;  ;  ; 13920 ; 457 ; 0.0 ; 0 ; 0 ; Mon May 20 22:24:53 ICT 2019 ; 00:05:01 ; Vivado Implementation Defaults (Vivado Implementation 2018) ; Vivado Implementation Default Reports (Vivado Implementation 2018) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, (String) null, 9, false); // ax (Q, cp)
+// [GUI Memory]: 142 MB (+617kb) [00:22:22]
+// Elapsed time: 31 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (C, cp)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (C, cp)
+// Elapsed time: 333 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aI (aF, cp)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i (A, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 931 MB. GUI used memory: 80 MB. Current time: 5/20/19, 10:39:54 PM ICT
+// Elapsed time: 311 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data.mem", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mem_mapped_keyboard.v", 4); // k (j, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 697, 263); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "z80_tester.v", 3); // k (j, cp)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mem_mapped_keyboard.v", 4); // k (j, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 429, 122); // cl (w, cp)
+selectCodeEditor("mem_mapped_keyboard.v", 429, 122, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "mem_mapped_keyboard.v", 'c'); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem"); // l (aT, cp)
+// Elapsed time: 120 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, z80_tester (z80_tester.v), fdivTarget : clockDiv (clockDiv.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 76 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// aS (cp): Cancel Implementation: addNotify
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a (aS)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aS (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+selectCodeEditor("z80_tester.v", 153, 452); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+floatView(PAResourceOtoP.PAViews_CODE, "z80_tester.v"); // ax (aI, cp)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+// PAResourceOtoP.PAViews_CODE: Code: close view
+// Elapsed time: 49 seconds
+closeFrame(PAResourceOtoP.PAViews_CODE, "z80_tester.v"); // ax (aI, aK)
+dockFrame(PAResourceOtoP.PAViews_CODE, "z80_tester.v"); // ax (aI, aK)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mem_mapped_keyboard.v", 3); // k (j, cp)
+floatView(PAResourceOtoP.PAViews_CODE, "mem_mapped_keyboard.v"); // ax (aI, cp)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+// Elapsed time: 125 seconds
+selectCodeEditor("mem_mapped_keyboard.v", 505, 433); // cl (w, aK)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "keycodev", true); // l (aT, aK)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "keycodev"); // l (aT, aK)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "keycodev"); // l (aT, aK)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "keycodev"); // l (aT, aK)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "keycodev"); // l (aT, aK)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "keycodev"); // l (aT, aK)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "keycodev"); // l (aT, aK)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "keycodev"); // l (aT, aK)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "keycodev"); // l (aT, aK)

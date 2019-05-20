@@ -33,7 +33,7 @@ module z80_top_direct_n(
     input wire nBUSRQ,
 
     input wire CLK,
-    //output wire [15:0] A,
+    output wire [15:0] A,
     inout wire [7:0] D
 );
 

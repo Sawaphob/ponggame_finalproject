@@ -6,8 +6,8 @@ module led(
     );
     always@ (posedge clk)
         begin
-            led[0] <= !state;
-            led[1] <= state;
+            led[0] = !state;
+            led[1] = state;
         end
     
 endmodule

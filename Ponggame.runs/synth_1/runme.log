@@ -14,17 +14,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5216 
+INFO: Helper process launched with PID 6764 
 WARNING: [Synth 8-2611] redeclaration of ansi port clkDiv is not allowed [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/clockDiv.v:8]
-WARNING: [Synth 8-2611] redeclaration of ansi port vsync is not allowed [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:53]
-WARNING: [Synth 8-2611] redeclaration of ansi port hsync is not allowed [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:53]
-WARNING: [Synth 8-976] vsync has already been declared [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:53]
-WARNING: [Synth 8-2654] second declaration of vsync ignored [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port vsync is not allowed [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:48]
+WARNING: [Synth 8-2611] redeclaration of ansi port hsync is not allowed [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:48]
+WARNING: [Synth 8-976] vsync has already been declared [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:48]
+WARNING: [Synth 8-2654] second declaration of vsync ignored [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:48]
 INFO: [Synth 8-994] vsync is declared here [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:13]
 INFO: [Synth 8-994] hsync is declared here [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:13]
+WARNING: [Synth 8-2611] redeclaration of ansi port state is not allowed [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:52]
 WARNING: [Synth 8-2611] redeclaration of ansi port segments is not allowed [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/segmentDecoder.v:8]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 392.387 ; gain = 113.695
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 392.105 ; gain = 113.617
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'z80_tester' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 INFO: [Synth 8-6157] synthesizing module 'clockDiv' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/clockDiv.v:3]
@@ -110,8 +111,8 @@ INFO: [Synth 8-6155] done synthesizing module 'z80_top_direct_n' (40#1) [C:/User
 INFO: [Synth 8-6157] synthesizing module 'mem_mapped_keyboard' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:3]
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter ADDR_WIDTH bound to: 16 - type: integer 
-CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'data2.mem'; please make sure the file is added to project and has read permission, ignoring [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:148]
-INFO: [Synth 8-3876] $readmem data file 'data.mem' is read successfully [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:149]
+INFO: [Synth 8-3876] $readmem data file 'data2.mem' is read successfully [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:168]
+INFO: [Synth 8-3876] $readmem data file 'data.mem' is read successfully [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:169]
 INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/vga_sync.v:1]
 	Parameter H_DISPLAY bound to: 640 - type: integer 
 	Parameter H_L_BORDER bound to: 48 - type: integer 
@@ -132,17 +133,17 @@ INFO: [Synth 8-6157] synthesizing module 'screenrom' [C:/Users/Sawaphob Chavana/
 INFO: [Synth 8-3876] $readmem data file 'myfile.data' is read successfully [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/screenrom.v:35]
 INFO: [Synth 8-6155] done synthesizing module 'screenrom' (42#1) [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/screenrom.v:23]
 INFO: [Synth 8-6157] synthesizing module 'gamepongrgb' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/gamepongrgb.v:3]
-	Parameter BALL_SIZE bound to: 8 - type: integer 
-	Parameter BAR_WIDTH bound to: 8 - type: integer 
-	Parameter BAR_HEIGHT bound to: 100 - type: integer 
-	Parameter scorePlayer1X bound to: 200 - type: integer 
-	Parameter scorePlayer1Y bound to: 30 - type: integer 
-	Parameter scorePlayer2X bound to: 400 - type: integer 
-	Parameter scorePlayer2Y bound to: 30 - type: integer 
-	Parameter scoreWidth bound to: 16 - type: integer 
-	Parameter scoreHeight bound to: 20 - type: integer 
-	Parameter bar1X bound to: 100 - type: integer 
-	Parameter bar2X bound to: 532 - type: integer 
+	Parameter BALLSIZE bound to: 8 - type: integer 
+	Parameter PADDLEWIDTH bound to: 8 - type: integer 
+	Parameter PADDLEHEIGHT bound to: 64 - type: integer 
+	Parameter scoreLeftPosX bound to: 220 - type: integer 
+	Parameter scoreLeftPosY bound to: 40 - type: integer 
+	Parameter scoreRightPosX bound to: 404 - type: integer 
+	Parameter scoreRightPosY bound to: 40 - type: integer 
+	Parameter SCOREWIDTH bound to: 16 - type: integer 
+	Parameter SCOREHEIGHT bound to: 20 - type: integer 
+	Parameter paddleLeftPosX bound to: 100 - type: integer 
+	Parameter paddleRightPosX bound to: 532 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'whichSegment' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/whichSegment.v:23]
 	Parameter segmentSize bound to: 6'b000100 
 INFO: [Synth 8-6155] done synthesizing module 'whichSegment' (43#1) [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/whichSegment.v:23]
@@ -156,7 +157,7 @@ INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/Sawaphob Chavana/
 INFO: [Synth 8-6155] done synthesizing module 'debouncer' (46#1) [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/hdl/debouncer.v:23]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/hdl/PS2Receiver.v:55]
 INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (47#1) [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/hdl/PS2Receiver.v:23]
-WARNING: [Synth 8-567] referenced signal 'keycodev' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:94]
+WARNING: [Synth 8-567] referenced signal 'keycodev' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:83]
 INFO: [Synth 8-6157] synthesizing module 'quadSevenSeg' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/quadSevenSeg.v:3]
 INFO: [Synth 8-6157] synthesizing module 'hexTo7Segment' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/segmentDecoder.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'hexTo7Segment' (48#1) [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/segmentDecoder.v:3]
@@ -165,20 +166,23 @@ WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity lis
 WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/quadSevenSeg.v:50]
 WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/quadSevenSeg.v:50]
 INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (49#1) [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/new/quadSevenSeg.v:3]
-WARNING: [Synth 8-567] referenced signal 'ball_x' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'ball_y' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'left_bar_y' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'right_bar_y' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'stage' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'restart' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'left_score' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'right_score' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'timer' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'ball_speed_x' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-567] referenced signal 'ball_speed_y' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:155]
-WARNING: [Synth 8-6014] Unused sequential element start_reg was removed.  [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:108]
+WARNING: [Synth 8-567] referenced signal 'ballPosX' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'ballPosY' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'leftPaddlePos' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'rightPaddlePos' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'state' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'resetgame' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'left_score' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'right_score' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'timer' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'acceralationX' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'acceralationY' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'player1Action' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-567] referenced signal 'player2Action' should be on the sensitivity list [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:172]
+WARNING: [Synth 8-6014] Unused sequential element start_reg was removed.  [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:103]
 INFO: [Synth 8-6155] done synthesizing module 'mem_mapped_keyboard' (50#1) [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:3]
-WARNING: [Synth 8-350] instance 'mem' of module 'mem_mapped_keyboard' requires 18 connections, but only 16 given [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:51]
+WARNING: [Synth 8-689] width (1) of port connection 'player1Action' does not match port width (2) of module 'mem_mapped_keyboard' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:44]
+WARNING: [Synth 8-350] instance 'mem' of module 'mem_mapped_keyboard' requires 19 connections, but only 17 given [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:44]
 INFO: [Synth 8-6155] done synthesizing module 'z80_tester' (51#1) [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 WARNING: [Synth 8-3331] design screenrom has unconnected port x[0]
 WARNING: [Synth 8-3331] design screenrom has unconnected port y[0]
@@ -194,7 +198,6 @@ WARNING: [Synth 8-3331] design mem_mapped_keyboard has unconnected port sw[3]
 WARNING: [Synth 8-3331] design mem_mapped_keyboard has unconnected port sw[2]
 WARNING: [Synth 8-3331] design mem_mapped_keyboard has unconnected port sw[1]
 WARNING: [Synth 8-3331] design mem_mapped_keyboard has unconnected port sw[0]
-WARNING: [Synth 8-3331] design mem_mapped_keyboard has unconnected port btnU
 WARNING: [Synth 8-3331] design mem_mapped_keyboard has unconnected port btnL
 WARNING: [Synth 8-3331] design alu_prep_daa has unconnected port low[0]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[98]
@@ -217,7 +220,7 @@ WARNING: [Synth 8-3331] design execute has unconnected port pla[18]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[14]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 655.586 ; gain = 376.895
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 648.668 ; gain = 370.180
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -230,10 +233,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 655.586 ; gain = 376.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 648.668 ; gain = 370.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 655.586 ; gain = 376.895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 648.668 ; gain = 370.180
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -244,24 +247,24 @@ Parsing XDC File [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Pongga
 Finished Parsing XDC File [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/constrs_1/new/Basys3.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/constrs_1/new/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/z80_tester_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/z80_tester_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 916.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 910.699 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 916.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 910.699 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 919.387 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 919.723 ; gain = 3.156
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 913.203 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 913.402 ; gain = 2.703
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 919.723 ; gain = 641.031
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 913.402 ; gain = 634.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 919.723 ; gain = 641.031
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 913.402 ; gain = 634.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -296,7 +299,7 @@ WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constrain
 WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/constrs_1/new/Basys3.xdc}, line 302).
 WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/constrs_1/new/Basys3.xdc}, line 302).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:26 ; elapsed = 00:03:28 . Memory (MB): peak = 919.723 ; gain = 641.031
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:10 ; elapsed = 00:04:12 . Memory (MB): peak = 913.402 ; gain = 634.914
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
@@ -385,30 +388,30 @@ INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "column" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "color" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "wsStartX" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "score" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "O" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "ball_x" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "ball_y" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "left_bar_y" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "right_bar_y" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "stage" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "restart" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ballPosX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ballPosY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "leftPaddlePos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rightPaddlePos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "resetgame" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "left_score" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "right_score" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "timer" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "ball_speed_x" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "ball_speed_y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "acceralationX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "acceralationY" won't be mapped to RAM because it is too sparse
 INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-327] inferring latch for variable 'wsStartX_reg' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/gamepongrgb.v:32]
 WARNING: [Synth 8-327] inferring latch for variable 'wsStartY_reg' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/gamepongrgb.v:32]
 WARNING: [Synth 8-327] inferring latch for variable 'score_reg' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/gamepongrgb.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'player1Action_reg' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:113]
+WARNING: [Synth 8-327] inferring latch for variable 'player2Action_reg' [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/new/mem_mapped_keyboard.v:130]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:40 ; elapsed = 00:03:42 . Memory (MB): peak = 919.723 ; gain = 641.031
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:25 ; elapsed = 00:04:28 . Memory (MB): peak = 913.402 ; gain = 634.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -416,8 +419,8 @@ Report RTL Partitions:
 |      |RTL Partition            |Replication |Instances |
 +------+-------------------------+------------+----------+
 |1     |rom_screenrom            |           1|     49140|
-|2     |mem_mapped_keyboard__GC0 |           1|      3538|
-|3     |z80_tester__GC0          |           1|      8098|
+|2     |mem_mapped_keyboard__GC0 |           1|      3590|
+|3     |z80_tester__GC0          |           1|      8087|
 +------+-------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -440,23 +443,25 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 8     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 130   
+	                1 Bit    Registers := 123   
 +---RAMs : 
 	             256K Bit         RAMs := 1     
 +---Muxes : 
-	   4 Input     12 Bit        Muxes := 1     
-	   3 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 2     
-	   2 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
 	  14 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 	   6 Input      3 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 105   
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 107   
 	   3 Input      1 Bit        Muxes := 1     
-	  12 Input      1 Bit        Muxes := 14    
+	  12 Input      1 Bit        Muxes := 13    
+	  13 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -487,11 +492,9 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     11 Bit       Adders := 4     
 +---Muxes : 
-	   4 Input     12 Bit        Muxes := 1     
-	   3 Input     12 Bit        Muxes := 1     
-	   2 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
 Module debouncer__2 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -523,7 +526,7 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 2     
-Module clockDiv__42 
+Module clockDiv__36 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -535,6 +538,30 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input      4 Bit        Muxes := 2     
+Module clockDiv__37 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__38 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__39 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__40 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__41 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__42 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module clockDiv__43 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -583,30 +610,6 @@ Module clockDiv__54
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module clockDiv__55 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__56 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__57 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__58 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__59 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__60 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
 Module mem_mapped_keyboard 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -614,16 +617,18 @@ Detailed RTL Component Info :
 	               10 Bit    Registers := 4     
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 6     
+	                1 Bit    Registers := 5     
 +---RAMs : 
 	             256K Bit         RAMs := 1     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 2     
 	  14 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 14    
-	  12 Input      1 Bit        Muxes := 12    
-Module clockDiv__61 
+	   2 Input      2 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	  12 Input      1 Bit        Muxes := 11    
+Module clockDiv__55 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -847,6 +852,30 @@ Module z80_top_direct_n
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
+Module clockDiv__56 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__57 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__58 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__59 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__60 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clockDiv__61 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module clockDiv__62 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -883,54 +912,6 @@ Module clockDiv__70
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module clockDiv__71 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__72 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__73 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__74 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__75 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__76 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__77 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__78 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__79 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__80 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__81 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clockDiv__82 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
 Module clockDiv 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -963,7 +944,6 @@ WARNING: [Synth 8-3331] design z80_tester has unconnected port sw[3]
 WARNING: [Synth 8-3331] design z80_tester has unconnected port sw[2]
 WARNING: [Synth 8-3331] design z80_tester has unconnected port sw[1]
 WARNING: [Synth 8-3331] design z80_tester has unconnected port sw[0]
-WARNING: [Synth 8-3331] design z80_tester has unconnected port btnU
 WARNING: [Synth 8-3331] design z80_tester has unconnected port btnL
 INFO: [Synth 8-3886] merging instance 'memi_2/uut/dataprev_reg[0]' (FDE) to 'memi_2/uut/keycode_reg[0]'
 INFO: [Synth 8-3886] merging instance 'memi_2/uut/dataprev_reg[1]' (FDE) to 'memi_2/uut/keycode_reg[1]'
@@ -973,36 +953,14 @@ INFO: [Synth 8-3886] merging instance 'memi_2/uut/dataprev_reg[4]' (FDE) to 'mem
 INFO: [Synth 8-3886] merging instance 'memi_2/uut/dataprev_reg[5]' (FDE) to 'memi_2/uut/keycode_reg[5]'
 INFO: [Synth 8-3886] merging instance 'memi_2/uut/dataprev_reg[6]' (FDE) to 'memi_2/uut/keycode_reg[6]'
 INFO: [Synth 8-3886] merging instance 'memi_2/uut/dataprev_reg[7]' (FDE) to 'memi_2/uut/keycode_reg[7]'
-INFO: [Synth 8-3886] merging instance 'memi_2/ball_x_reg[0]' (FDE) to 'memi_2/ball_x_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\ball_x_reg[1] )
-INFO: [Synth 8-3886] merging instance 'memi_2/ball_y_reg[0]' (FDE) to 'memi_2/ball_y_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\ball_y_reg[1] )
-INFO: [Synth 8-3886] merging instance 'memi_2/left_bar_y_reg[0]' (FDE) to 'memi_2/left_bar_y_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\left_bar_y_reg[1] )
-INFO: [Synth 8-3886] merging instance 'memi_2/right_bar_y_reg[0]' (FDE) to 'memi_2/right_bar_y_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\right_bar_y_reg[1] )
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/score_reg[0]' (LD) to 'memi_2/pong/score_reg[4]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/score_reg[1]' (LD) to 'memi_2/pong/score_reg[4]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/score_reg[3]' (LD) to 'memi_2/pong/score_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\pong/score_reg[4] )
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartX_reg[0]' (LD) to 'memi_2/pong/wsStartY_reg[9]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartX_reg[1]' (LD) to 'memi_2/pong/wsStartY_reg[9]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartX_reg[8]' (LD) to 'memi_2/pong/wsStartX_reg[4]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartX_reg[7]' (LD) to 'memi_2/pong/wsStartY_reg[4]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartX_reg[6]' (LD) to 'memi_2/pong/wsStartX_reg[3]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartX_reg[5]' (LD) to 'memi_2/pong/wsStartY_reg[9]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartX_reg[2]' (LD) to 'memi_2/pong/wsStartY_reg[9]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartX_reg[9]' (LD) to 'memi_2/pong/wsStartY_reg[9]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartY_reg[0]' (LD) to 'memi_2/pong/wsStartY_reg[9]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartY_reg[1]' (LD) to 'memi_2/pong/wsStartY_reg[4]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartY_reg[2]' (LD) to 'memi_2/pong/wsStartY_reg[4]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartY_reg[3]' (LD) to 'memi_2/pong/wsStartY_reg[4]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartY_reg[9]' (LD) to 'memi_2/pong/wsStartY_reg[8]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartY_reg[8]' (LD) to 'memi_2/pong/wsStartY_reg[7]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartY_reg[7]' (LD) to 'memi_2/pong/wsStartY_reg[6]'
-INFO: [Synth 8-3886] merging instance 'memi_2/pong/wsStartY_reg[6]' (LD) to 'memi_2/pong/wsStartY_reg[5]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\pong/wsStartY_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (memi_2/\pong/wsStartY_reg[4] )
+INFO: [Synth 8-3886] merging instance 'memi_2/ballPosX_reg[0]' (FDE) to 'memi_2/ballPosX_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\ballPosX_reg[1] )
+INFO: [Synth 8-3886] merging instance 'memi_2/ballPosY_reg[0]' (FDE) to 'memi_2/ballPosY_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\ballPosY_reg[1] )
+INFO: [Synth 8-3886] merging instance 'memi_2/leftPaddlePos_reg[0]' (FDE) to 'memi_2/leftPaddlePos_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\leftPaddlePos_reg[1] )
+INFO: [Synth 8-3886] merging instance 'memi_2/rightPaddlePos_reg[0]' (FDE) to 'memi_2/rightPaddlePos_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (memi_2/\rightPaddlePos_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\cpu/interrupts_/int_armed_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\cpu/clk_delay_/SYNTHESIZED_WIRE_9_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\cpu/clk_delay_/SYNTHESIZED_WIRE_8_reg )
@@ -1010,7 +968,7 @@ INFO: [Synth 8-3886] merging instance 'i_0/cpu/interrupts_/int_armed_reg' (FDC) 
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\cpu/clk_delay_/SYNTHESIZED_WIRE_7_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\cpu/memory_ifc_/DFFE_intr_ff3_reg )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:38 ; elapsed = 00:04:41 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:30 ; elapsed = 00:05:34 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1040,15 +998,15 @@ Report RTL Partitions:
 +------+-------------------------+------------+----------+
 |      |RTL Partition            |Replication |Instances |
 +------+-------------------------+------------+----------+
-|1     |rom_screenrom            |           1|     21388|
-|2     |mem_mapped_keyboard__GC0 |           1|      4017|
-|3     |z80_tester__GC0          |           1|      5120|
+|1     |rom_screenrom            |           1|     21509|
+|2     |mem_mapped_keyboard__GC0 |           1|      3850|
+|3     |z80_tester__GC0          |           1|      5109|
 +------+-------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:36 ; elapsed = 00:08:39 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:09:45 ; elapsed = 00:09:49 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1070,7 +1028,7 @@ Inferred a: "set_disable_timing -from a -to z i_0/i_398(tricell)"
 Inferred a: "set_disable_timing -from a -to z i_0/sw2_i_382(tricell)"
       : i_0/i_453/db[4]
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:08:39 ; elapsed = 00:08:42 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Timing Optimization : Time (s): cpu = 00:09:49 ; elapsed = 00:09:53 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1091,278 +1049,278 @@ Report RTL Partitions:
 +------+-------------------------+------------+----------+
 |      |RTL Partition            |Replication |Instances |
 +------+-------------------------+------------+----------+
-|1     |rom_screenrom            |           1|     21388|
-|2     |mem_mapped_keyboard__GC0 |           1|      3998|
-|3     |z80_tester__GC0          |           1|      5120|
+|1     |rom_screenrom            |           1|     21509|
+|2     |mem_mapped_keyboard__GC0 |           1|      3851|
+|3     |z80_tester__GC0          |           1|      5109|
 +------+-------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 Found timing loop:
-     0: i_9206/z (tricell)
-     1: i_9206/z (tricell)
+     0: i_9153/z (tricell)
+     1: i_9153/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9166/z (tricell)
-     1: i_9166/z (tricell)
+     0: i_9113/z (tricell)
+     1: i_9113/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9046/z (tricell)
-     1: i_9046/z (tricell)
+     0: i_8993/z (tricell)
+     1: i_8993/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z sw2_i_9150(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_9097(tricell)"
 Found timing loop:
-     0: i_9202/z (tricell)
-     1: i_9202/z (tricell)
+     0: i_9149/z (tricell)
+     1: i_9149/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z i_9159(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_9106(tricell)"
 Found timing loop:
-     0: i_9042/z (tricell)
-     1: i_9042/z (tricell)
+     0: i_8989/z (tricell)
+     1: i_8989/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z sw2_i_9146(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_9093(tricell)"
 Found timing loop:
-     0: i_9202/z (tricell)
-     1: i_9202/z (tricell)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Found timing loop:
-     0: i_9203/z (tricell)
-     1: i_9203/z (tricell)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z i_9160(tricell)"
-Found timing loop:
-     0: i_9043/z (tricell)
-     1: i_9043/z (tricell)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z sw2_i_9147(tricell)"
-Found timing loop:
-     0: i_9202/z (tricell)
-     1: i_9202/z (tricell)
+     0: i_9149/z (tricell)
+     1: i_9149/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9204/z (tricell)
-     1: i_9204/z (tricell)
+     0: i_9150/z (tricell)
+     1: i_9150/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z i_9161(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_9107(tricell)"
 Found timing loop:
-     0: i_9044/z (tricell)
-     1: i_9044/z (tricell)
+     0: i_8990/z (tricell)
+     1: i_8990/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z sw2_i_9148(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_9094(tricell)"
 Found timing loop:
-     0: i_9202/z (tricell)
-     1: i_9202/z (tricell)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Found timing loop:
-     0: i_9204/z (tricell)
-     1: i_9204/z (tricell)
+     0: i_9149/z (tricell)
+     1: i_9149/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9203/z (tricell)
-     1: i_9203/z (tricell)
+     0: i_9151/z (tricell)
+     1: i_9151/z (tricell)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
+Inferred a: "set_disable_timing -from a -to z i_9108(tricell)"
+Found timing loop:
+     0: i_8991/z (tricell)
+     1: i_8991/z (tricell)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
+Inferred a: "set_disable_timing -from a -to z sw2_i_9095(tricell)"
+Found timing loop:
+     0: i_9149/z (tricell)
+     1: i_9149/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9147/z (tricell)
-     1: sw2_i_9147/z (tricell)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z i_9165(tricell)"
-Inferred a: "set_disable_timing -from a -to z sw2_i_9149(tricell)"
-Found timing loop:
-     0: i_9053/z (tricell)
-     1: i_9053/z (tricell)
+     0: i_9151/z (tricell)
+     1: i_9151/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9165/z (tricell)
-     1: i_9165/z (tricell)
+     0: i_9150/z (tricell)
+     1: i_9150/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9045/z (tricell)
-     1: i_9045/z (tricell)
+     0: sw2_i_9094/z (tricell)
+     1: sw2_i_9094/z (tricell)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
+Inferred a: "set_disable_timing -from a -to z i_9112(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_9096(tricell)"
+Found timing loop:
+     0: i_9000/z (tricell)
+     1: i_9000/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9149/z (tricell)
-     1: sw2_i_9149/z (tricell)
+     0: i_9112/z (tricell)
+     1: i_9112/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9202/z (tricell)
-     1: i_9202/z (tricell)
+     0: i_8992/z (tricell)
+     1: i_8992/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9204/z (tricell)
-     1: i_9204/z (tricell)
+     0: sw2_i_9096/z (tricell)
+     1: sw2_i_9096/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9203/z (tricell)
-     1: i_9203/z (tricell)
+     0: i_9149/z (tricell)
+     1: i_9149/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9148/z (tricell)
-     1: sw2_i_9148/z (tricell)
+     0: i_9151/z (tricell)
+     1: i_9151/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9150/z (tricell)
-     1: sw2_i_9150/z (tricell)
+     0: i_9150/z (tricell)
+     1: i_9150/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9149/z (tricell)
-     1: sw2_i_9149/z (tricell)
+     0: sw2_i_9095/z (tricell)
+     1: sw2_i_9095/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9148/z (tricell)
-     1: sw2_i_9148/z (tricell)
+     0: sw2_i_9097/z (tricell)
+     1: sw2_i_9097/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9052/z (tricell)
-     1: i_9052/z (tricell)
+     0: sw2_i_9096/z (tricell)
+     1: sw2_i_9096/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9161/z (tricell)
-     1: i_9161/z (tricell)
+     0: sw2_i_9095/z (tricell)
+     1: sw2_i_9095/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9203/z (tricell)
-     1: i_9203/z (tricell)
+     0: i_8999/z (tricell)
+     1: i_8999/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9146/z (tricell)
-     1: sw2_i_9146/z (tricell)
+     0: i_9108/z (tricell)
+     1: i_9108/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9147/z (tricell)
-     1: sw2_i_9147/z (tricell)
+     0: i_9150/z (tricell)
+     1: i_9150/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9051/z (tricell)
-     1: i_9051/z (tricell)
+     0: sw2_i_9093/z (tricell)
+     1: sw2_i_9093/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9160/z (tricell)
-     1: i_9160/z (tricell)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z i_9164(tricell)"
-Inferred a: "set_disable_timing -from a -to z sw2_i_9145(tricell)"
-Found timing loop:
-     0: i_9049/z (tricell)
-     1: i_9049/z (tricell)
+     0: sw2_i_9094/z (tricell)
+     1: sw2_i_9094/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9164/z (tricell)
-     1: i_9164/z (tricell)
+     0: i_8998/z (tricell)
+     1: i_8998/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9041/z (tricell)
-     1: i_9041/z (tricell)
+     0: i_9107/z (tricell)
+     1: i_9107/z (tricell)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
+Inferred a: "set_disable_timing -from a -to z i_9111(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_9092(tricell)"
+Found timing loop:
+     0: i_8996/z (tricell)
+     1: i_8996/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9145/z (tricell)
-     1: sw2_i_9145/z (tricell)
+     0: i_9111/z (tricell)
+     1: i_9111/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9202/z (tricell)
-     1: i_9202/z (tricell)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z i_9163(tricell)"
-Inferred a: "set_disable_timing -from a -to z sw2_i_9144(tricell)"
-Found timing loop:
-     0: i_9048/z (tricell)
-     1: i_9048/z (tricell)
+     0: i_8988/z (tricell)
+     1: i_8988/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9163/z (tricell)
-     1: i_9163/z (tricell)
+     0: sw2_i_9092/z (tricell)
+     1: sw2_i_9092/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9040/z (tricell)
-     1: i_9040/z (tricell)
+     0: i_9149/z (tricell)
+     1: i_9149/z (tricell)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
+Inferred a: "set_disable_timing -from a -to z i_9110(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_9091(tricell)"
+Found timing loop:
+     0: i_8995/z (tricell)
+     1: i_8995/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9144/z (tricell)
-     1: sw2_i_9144/z (tricell)
+     0: i_9110/z (tricell)
+     1: i_9110/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9202/z (tricell)
-     1: i_9202/z (tricell)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
-Inferred a: "set_disable_timing -from a -to z i_9162(tricell)"
-Inferred a: "set_disable_timing -from a -to z sw2_i_9143(tricell)"
-Found timing loop:
-     0: i_9047/z (tricell)
-     1: i_9047/z (tricell)
+     0: i_8987/z (tricell)
+     1: i_8987/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9162/z (tricell)
-     1: i_9162/z (tricell)
+     0: sw2_i_9091/z (tricell)
+     1: sw2_i_9091/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9039/z (tricell)
-     1: i_9039/z (tricell)
+     0: i_9149/z (tricell)
+     1: i_9149/z (tricell)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
+Inferred a: "set_disable_timing -from a -to z i_9109(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_9090(tricell)"
+Found timing loop:
+     0: i_8994/z (tricell)
+     1: i_8994/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9143/z (tricell)
-     1: sw2_i_9143/z (tricell)
+     0: i_9109/z (tricell)
+     1: i_9109/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9202/z (tricell)
-     1: i_9202/z (tricell)
+     0: i_8986/z (tricell)
+     1: i_8986/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9150/z (tricell)
-     1: sw2_i_9150/z (tricell)
+     0: sw2_i_9090/z (tricell)
+     1: sw2_i_9090/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9143/z (tricell)
-     1: sw2_i_9143/z (tricell)
+     0: i_9149/z (tricell)
+     1: i_9149/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9144/z (tricell)
-     1: sw2_i_9144/z (tricell)
+     0: sw2_i_9097/z (tricell)
+     1: sw2_i_9097/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9143/z (tricell)
-     1: sw2_i_9143/z (tricell)
+     0: sw2_i_9090/z (tricell)
+     1: sw2_i_9090/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9145/z (tricell)
-     1: sw2_i_9145/z (tricell)
+     0: sw2_i_9091/z (tricell)
+     1: sw2_i_9091/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9144/z (tricell)
-     1: sw2_i_9144/z (tricell)
+     0: sw2_i_9090/z (tricell)
+     1: sw2_i_9090/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9146/z (tricell)
-     1: sw2_i_9146/z (tricell)
+     0: sw2_i_9092/z (tricell)
+     1: sw2_i_9092/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9145/z (tricell)
-     1: sw2_i_9145/z (tricell)
+     0: sw2_i_9091/z (tricell)
+     1: sw2_i_9091/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9146/z (tricell)
-     1: sw2_i_9146/z (tricell)
+     0: sw2_i_9093/z (tricell)
+     1: sw2_i_9093/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9050/z (tricell)
-     1: i_9050/z (tricell)
+     0: sw2_i_9092/z (tricell)
+     1: sw2_i_9092/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9159/z (tricell)
-     1: i_9159/z (tricell)
+     0: sw2_i_9093/z (tricell)
+     1: sw2_i_9093/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: sw2_i_9150/z (tricell)
-     1: sw2_i_9150/z (tricell)
+     0: i_8997/z (tricell)
+     1: i_8997/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9054/z (tricell)
-     1: i_9054/z (tricell)
+     0: i_9106/z (tricell)
+     1: i_9106/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 Found timing loop:
-     0: i_9166/z (tricell)
-     1: i_9166/z (tricell)
+     0: sw2_i_9097/z (tricell)
+     1: sw2_i_9097/z (tricell)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
+Found timing loop:
+     0: i_9001/z (tricell)
+     1: i_9001/z (tricell)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
+Found timing loop:
+     0: i_9113/z (tricell)
+     1: i_9113/z (tricell)
 CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v:3]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:08:46 ; elapsed = 00:08:49 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Technology Mapping : Time (s): cpu = 00:09:56 ; elapsed = 00:10:00 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1386,7 +1344,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:08:48 ; elapsed = 00:08:51 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished IO Insertion : Time (s): cpu = 00:09:58 ; elapsed = 00:10:03 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1399,7 +1357,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:08:48 ; elapsed = 00:08:51 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:58 ; elapsed = 00:10:03 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1912,25 +1870,25 @@ Inferred a: "set_disable_timing -from I0 -to O \latch[6]_i_1__0 "
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:51 ; elapsed = 00:08:54 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:01 ; elapsed = 00:10:06 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:09:08 ; elapsed = 00:09:11 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Renaming Generated Ports : Time (s): cpu = 00:10:19 ; elapsed = 00:10:24 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:09:16 ; elapsed = 00:09:20 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Handling Custom Attributes : Time (s): cpu = 00:10:28 ; elapsed = 00:10:32 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:09:16 ; elapsed = 00:09:20 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Renaming Generated Nets : Time (s): cpu = 00:10:28 ; elapsed = 00:10:32 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1947,34 +1905,34 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     3|
-|2     |CARRY4    |    52|
-|3     |LUT1      |    71|
-|4     |LUT2      |   480|
-|5     |LUT3      |   290|
-|6     |LUT4      |   468|
-|7     |LUT5      |  1186|
-|8     |LUT6      | 12526|
-|9     |MUXF7     |  4012|
-|10    |MUXF8     |   356|
+|2     |CARRY4    |    24|
+|3     |LUT1      |    45|
+|4     |LUT2      |   409|
+|5     |LUT3      |   261|
+|6     |LUT4      |   452|
+|7     |LUT5      |  1206|
+|8     |LUT6      | 12579|
+|9     |MUXF7     |  4045|
+|10    |MUXF8     |   341|
 |11    |RAM16X1S  |     8|
 |12    |RAM256X1S |  1024|
 |13    |FDCE      |    81|
 |14    |FDPE      |     6|
-|15    |FDRE      |   443|
-|16    |LD        |     3|
-|17    |IBUF      |     4|
-|18    |OBUF      |    26|
-|19    |OBUFT     |    16|
+|15    |FDRE      |   436|
+|16    |LDC       |     2|
+|17    |LDCP      |     2|
+|18    |IBUF      |     5|
+|19    |OBUF      |    28|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+-----------------------+--------------------+------+
 |      |Instance               |Module              |Cells |
 +------+-----------------------+--------------------+------+
-|1     |top                    |                    | 21055|
-|2     |  cpu                  |z80_top_direct_n    |  2718|
+|1     |top                    |                    | 20957|
+|2     |  cpu                  |z80_top_direct_n    |  2730|
 |3     |    address_latch_     |address_latch       |    42|
-|4     |    address_pins_      |address_pins        |   296|
+|4     |    address_pins_      |address_pins        |   308|
 |5     |    alu_               |alu                 |    42|
 |6     |    alu_control_       |alu_control         |     2|
 |7     |    alu_flags_         |alu_flags           |    15|
@@ -1987,33 +1945,33 @@ Report Instance Areas:
 |14    |    reg_control_       |reg_control         |     7|
 |15    |    reg_file_          |reg_file            |   336|
 |16    |      b2v_latch_af2_hi |reg_latch           |     8|
-|17    |      b2v_latch_af2_lo |reg_latch_42        |     8|
-|18    |      b2v_latch_af_hi  |reg_latch_43        |     8|
-|19    |      b2v_latch_af_lo  |reg_latch_44        |     8|
-|20    |      b2v_latch_bc2_hi |reg_latch_45        |    16|
-|21    |      b2v_latch_bc2_lo |reg_latch_46        |    16|
-|22    |      b2v_latch_bc_hi  |reg_latch_47        |     8|
-|23    |      b2v_latch_bc_lo  |reg_latch_48        |     8|
-|24    |      b2v_latch_de2_hi |reg_latch_49        |     8|
-|25    |      b2v_latch_de2_lo |reg_latch_50        |     8|
-|26    |      b2v_latch_de_hi  |reg_latch_51        |    16|
-|27    |      b2v_latch_de_lo  |reg_latch_52        |    16|
-|28    |      b2v_latch_hl2_hi |reg_latch_53        |     8|
-|29    |      b2v_latch_hl2_lo |reg_latch_54        |     8|
-|30    |      b2v_latch_hl_hi  |reg_latch_55        |     8|
-|31    |      b2v_latch_hl_lo  |reg_latch_56        |     8|
-|32    |      b2v_latch_ir_hi  |reg_latch_57        |    16|
-|33    |      b2v_latch_ir_lo  |reg_latch_58        |    16|
-|34    |      b2v_latch_ix_hi  |reg_latch_59        |    16|
-|35    |      b2v_latch_ix_lo  |reg_latch_60        |    16|
-|36    |      b2v_latch_iy_hi  |reg_latch_61        |     8|
-|37    |      b2v_latch_iy_lo  |reg_latch_62        |     8|
-|38    |      b2v_latch_pc_hi  |reg_latch_63        |     8|
-|39    |      b2v_latch_pc_lo  |reg_latch_64        |     8|
-|40    |      b2v_latch_sp_hi  |reg_latch_65        |     8|
-|41    |      b2v_latch_sp_lo  |reg_latch_66        |     8|
-|42    |      b2v_latch_wz_hi  |reg_latch_67        |    32|
-|43    |      b2v_latch_wz_lo  |reg_latch_68        |    32|
+|17    |      b2v_latch_af2_lo |reg_latch_36        |     8|
+|18    |      b2v_latch_af_hi  |reg_latch_37        |     8|
+|19    |      b2v_latch_af_lo  |reg_latch_38        |     8|
+|20    |      b2v_latch_bc2_hi |reg_latch_39        |    16|
+|21    |      b2v_latch_bc2_lo |reg_latch_40        |    16|
+|22    |      b2v_latch_bc_hi  |reg_latch_41        |     8|
+|23    |      b2v_latch_bc_lo  |reg_latch_42        |     8|
+|24    |      b2v_latch_de2_hi |reg_latch_43        |     8|
+|25    |      b2v_latch_de2_lo |reg_latch_44        |     8|
+|26    |      b2v_latch_de_hi  |reg_latch_45        |    16|
+|27    |      b2v_latch_de_lo  |reg_latch_46        |    16|
+|28    |      b2v_latch_hl2_hi |reg_latch_47        |     8|
+|29    |      b2v_latch_hl2_lo |reg_latch_48        |     8|
+|30    |      b2v_latch_hl_hi  |reg_latch_49        |     8|
+|31    |      b2v_latch_hl_lo  |reg_latch_50        |     8|
+|32    |      b2v_latch_ir_hi  |reg_latch_51        |    16|
+|33    |      b2v_latch_ir_lo  |reg_latch_52        |    16|
+|34    |      b2v_latch_ix_hi  |reg_latch_53        |    16|
+|35    |      b2v_latch_ix_lo  |reg_latch_54        |    16|
+|36    |      b2v_latch_iy_hi  |reg_latch_55        |     8|
+|37    |      b2v_latch_iy_lo  |reg_latch_56        |     8|
+|38    |      b2v_latch_pc_hi  |reg_latch_57        |     8|
+|39    |      b2v_latch_pc_lo  |reg_latch_58        |     8|
+|40    |      b2v_latch_sp_hi  |reg_latch_59        |     8|
+|41    |      b2v_latch_sp_lo  |reg_latch_60        |     8|
+|42    |      b2v_latch_wz_hi  |reg_latch_61        |    32|
+|43    |      b2v_latch_wz_lo  |reg_latch_62        |    32|
 |44    |    resets_            |resets              |    25|
 |45    |    sequencer_         |sequencer           |   416|
 |46    |  fdivTarget           |clockDiv            |     1|
@@ -2024,75 +1982,69 @@ Report Instance Areas:
 |51    |  \genblk1[13].fdiv    |clockDiv_4          |     2|
 |52    |  \genblk1[14].fdiv    |clockDiv_5          |     2|
 |53    |  \genblk1[15].fdiv    |clockDiv_6          |     2|
-|54    |  \genblk1[16].fdiv    |clockDiv_7          |     2|
-|55    |  \genblk1[17].fdiv    |clockDiv_8          |     2|
-|56    |  \genblk1[18].fdiv    |clockDiv_9          |     2|
-|57    |  \genblk1[19].fdiv    |clockDiv_10         |     2|
-|58    |  \genblk1[1].fdiv     |clockDiv_11         |     2|
-|59    |  \genblk1[20].fdiv    |clockDiv_12         |     2|
-|60    |  \genblk1[21].fdiv    |clockDiv_13         |     2|
-|61    |  \genblk1[2].fdiv     |clockDiv_14         |     2|
-|62    |  \genblk1[3].fdiv     |clockDiv_15         |     2|
-|63    |  \genblk1[4].fdiv     |clockDiv_16         |     2|
-|64    |  \genblk1[5].fdiv     |clockDiv_17         |     2|
-|65    |  \genblk1[6].fdiv     |clockDiv_18         |     2|
-|66    |  \genblk1[7].fdiv     |clockDiv_19         |     2|
-|67    |  \genblk1[8].fdiv     |clockDiv_20         |     2|
-|68    |  \genblk1[9].fdiv     |clockDiv_21         |     2|
-|69    |  mem                  |mem_mapped_keyboard | 18242|
-|70    |    rom                |screenrom           |  9683|
-|71    |    fdivTarget         |clockDiv_22         |     2|
-|72    |    \genblk1[0].fdiv   |clockDiv_23         |     2|
-|73    |    \genblk1[10].fdiv  |clockDiv_24         |     2|
-|74    |    \genblk1[11].fdiv  |clockDiv_25         |     2|
-|75    |    \genblk1[12].fdiv  |clockDiv_26         |     2|
-|76    |    \genblk1[13].fdiv  |clockDiv_27         |     2|
-|77    |    \genblk1[14].fdiv  |clockDiv_28         |     2|
-|78    |    \genblk1[15].fdiv  |clockDiv_29         |     2|
-|79    |    \genblk1[16].fdiv  |clockDiv_30         |     2|
-|80    |    \genblk1[17].fdiv  |clockDiv_31         |     2|
-|81    |    \genblk1[1].fdiv   |clockDiv_32         |     2|
-|82    |    \genblk1[2].fdiv   |clockDiv_33         |     2|
-|83    |    \genblk1[3].fdiv   |clockDiv_34         |     2|
-|84    |    \genblk1[4].fdiv   |clockDiv_35         |     2|
-|85    |    \genblk1[5].fdiv   |clockDiv_36         |     2|
-|86    |    \genblk1[6].fdiv   |clockDiv_37         |     2|
-|87    |    \genblk1[7].fdiv   |clockDiv_38         |     2|
-|88    |    \genblk1[8].fdiv   |clockDiv_39         |     2|
-|89    |    \genblk1[9].fdiv   |clockDiv_40         |     2|
-|90    |    pong               |gamepongrgb         |    67|
-|91    |      ws               |whichSegment        |    26|
-|92    |    q7seg              |quadSevenSeg        |    19|
-|93    |    uut                |PS2Receiver         |    97|
-|94    |      db_clk           |debouncer           |    15|
-|95    |      db_data          |debouncer_41        |    24|
-|96    |    vga_sync_unit      |vga_sync            |  6772|
+|54    |  \genblk1[1].fdiv     |clockDiv_7          |     2|
+|55    |  \genblk1[2].fdiv     |clockDiv_8          |     2|
+|56    |  \genblk1[3].fdiv     |clockDiv_9          |     2|
+|57    |  \genblk1[4].fdiv     |clockDiv_10         |     2|
+|58    |  \genblk1[5].fdiv     |clockDiv_11         |     2|
+|59    |  \genblk1[6].fdiv     |clockDiv_12         |     2|
+|60    |  \genblk1[7].fdiv     |clockDiv_13         |     2|
+|61    |  \genblk1[8].fdiv     |clockDiv_14         |     2|
+|62    |  \genblk1[9].fdiv     |clockDiv_15         |     2|
+|63    |  mem                  |mem_mapped_keyboard | 18157|
+|64    |    rom                |screenrom           |  9744|
+|65    |    fdivTarget         |clockDiv_16         |     2|
+|66    |    \genblk1[0].fdiv   |clockDiv_17         |     2|
+|67    |    \genblk1[10].fdiv  |clockDiv_18         |     2|
+|68    |    \genblk1[11].fdiv  |clockDiv_19         |     2|
+|69    |    \genblk1[12].fdiv  |clockDiv_20         |     2|
+|70    |    \genblk1[13].fdiv  |clockDiv_21         |     2|
+|71    |    \genblk1[14].fdiv  |clockDiv_22         |     2|
+|72    |    \genblk1[15].fdiv  |clockDiv_23         |     2|
+|73    |    \genblk1[16].fdiv  |clockDiv_24         |     2|
+|74    |    \genblk1[17].fdiv  |clockDiv_25         |     2|
+|75    |    \genblk1[1].fdiv   |clockDiv_26         |     2|
+|76    |    \genblk1[2].fdiv   |clockDiv_27         |     2|
+|77    |    \genblk1[3].fdiv   |clockDiv_28         |     2|
+|78    |    \genblk1[4].fdiv   |clockDiv_29         |     2|
+|79    |    \genblk1[5].fdiv   |clockDiv_30         |     2|
+|80    |    \genblk1[6].fdiv   |clockDiv_31         |     2|
+|81    |    \genblk1[7].fdiv   |clockDiv_32         |     2|
+|82    |    \genblk1[8].fdiv   |clockDiv_33         |     2|
+|83    |    \genblk1[9].fdiv   |clockDiv_34         |     2|
+|84    |    pong               |gamepongrgb         |    31|
+|85    |    q7seg              |quadSevenSeg        |    19|
+|86    |    uut                |PS2Receiver         |   111|
+|87    |      db_clk           |debouncer           |    15|
+|88    |      db_data          |debouncer_35        |    24|
+|89    |    vga_sync_unit      |vga_sync            |  6646|
 +------+-----------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:09:16 ; elapsed = 00:09:20 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Finished Writing Synthesis Report : Time (s): cpu = 00:10:28 ; elapsed = 00:10:32 . Memory (MB): peak = 1156.750 ; gain = 878.262
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 104 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:08:54 ; elapsed = 00:09:12 . Memory (MB): peak = 1158.055 ; gain = 615.227
-Synthesis Optimization Complete : Time (s): cpu = 00:09:17 ; elapsed = 00:09:20 . Memory (MB): peak = 1158.055 ; gain = 879.363
+Synthesis finished with 0 errors, 104 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:10:05 ; elapsed = 00:10:25 . Memory (MB): peak = 1156.750 ; gain = 613.527
+Synthesis Optimization Complete : Time (s): cpu = 00:10:28 ; elapsed = 00:10:33 . Memory (MB): peak = 1156.750 ; gain = 878.262
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 5455 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 5446 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1158.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1156.750 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1035 instances were transformed.
-  LD => LDCE: 3 instances
+  A total of 1036 instances were transformed.
+  LDC => LDCE: 2 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
   RAM16X1S => RAM32X1S (RAMS32): 8 instances
   RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 1024 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-270 Infos, 77 Warnings, 101 Critical Warnings and 0 Errors encountered.
+247 Infos, 81 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:09:25 ; elapsed = 00:09:29 . Memory (MB): peak = 1158.055 ; gain = 891.852
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1158.055 ; gain = 0.000
+synth_design: Time (s): cpu = 00:10:37 ; elapsed = 00:10:42 . Memory (MB): peak = 1156.750 ; gain = 890.570
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1156.750 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/synth_1/z80_tester.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file z80_tester_utilization_synth.rpt -pb z80_tester_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 20 13:27:35 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon May 20 23:04:01 2019...

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -46,7 +46,10 @@ set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/D
 set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/core.vh}}]
 set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/globals.vh}}]
 set_property file_type "Verilog Header" [get_files {{C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/coremodules.vh}}]
-read_mem {{C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/data.mem}}
+read_mem {
+  {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/data2.mem}
+  {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/data.mem}
+}
 read_verilog -library xil_defaultlib {
   {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/imports/hdl/PS2Receiver.v}
   {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/imports/x/address_latch.v}
