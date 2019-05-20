@@ -11,7 +11,9 @@ module mem_mapped_keyboard(
     output [3:0] an,
     output dp,
     output wire hsync, vsync,
-	output wire [11:0] rgb
+	output wire [11:0] rgb,
+	output reg [1:0] player1Action = 2'b0,
+	output reg [1:0] player2Action = 2'b0
 );
 
 parameter DATA_WIDTH=8;
@@ -33,6 +35,18 @@ reg [2:0] bcount;
 reg start = 0;
 reg [15:0] addr = 16'b0000000000000000;
 
+reg [9:0] ball_x = 10'b0101000000;
+reg [9:0] ball_y = 10'b0011110000;
+reg [9:0] left_bar_y = 10'b0010100000;
+reg [9:0] right_bar_y = 10'b0010100000;
+reg stage = 1'b0;
+reg restart = 1'b0;
+reg [3:0] left_score = 4'b0;
+reg [3:0] right_score = 4'b0;
+reg [7:0] timer = 8'b0;
+reg ball_speed_x = 1'b0;
+reg ball_speed_y = 1'b0;
+
 //START VGA BLOCK
     reg [11:0] rgb_reg = 12'b000000000000;
     wire video_on;
@@ -49,7 +63,7 @@ reg [15:0] addr = 16'b0000000000000000;
     
     vga_sync vga_sync_unit (clk,reset,hsync,vsync,video_on,p_tick,x,y);
     screenrom rom (start_rgb,x,y);
-    gamepongrgb pong (x,y,10'b0101000000,10'b0011110000,10'b0001100100,10'b0001100100,game_rgb);
+    gamepongrgb pong (x,y,ball_x,ball_y,left_bar_y,right_bar_y,game_rgb);
     assign selectrgb = (state) ? start_rgb : game_rgb;
     assign rgb = (video_on) ? selectrgb : 12'b0;
    
@@ -120,10 +134,19 @@ quadSevenSeg q7seg(seg,dp,an,keycodev[3:0],keycodev[7:4],keycodev[11:8],keycodev
 //            mem[ram_index] = 8'b0;
 //    end
 //endgenerate
+generate
+    begin: init_bram_to_zero
+        integer ram_index;
+        initial
+        for (ram_index = 0; ram_index < 2**ADDR_WIDTH; ram_index = ram_index + 1)
+            mem[ram_index] = 8'b0;
+    end
+endgenerate
 
 initial
 begin
-	$readmemb("data.mem",mem);
+    $readmemh("data2.mem",mem,0);
+	$readmemh("data.mem",mem,32768);
 end
 
 //END Memory initialization
@@ -131,34 +154,48 @@ end
 //Memory Mapping for read
 always @(address)
 begin
-           if(address == 16'hFFFF) begin 
-                data_out = {keycodev[7:0]};
-            end
-            else if (address == 16'hFFFE) begin
-                data_out = {keycodev[15:8]};
-            end
-            else
-            
-            begin
-                $display("%10d - mem[%h] -  %h\n",$time, address,data_out);	
-                data_out = {mem[address]};
-            end    
-
+      case (address)
+          16'h44F0 : data_out <= ball_x[9:2];
+          16'h44E0 : data_out <= ball_y[9:2];
+          16'h44D0 : data_out <= left_bar_y[9:2];
+          16'h44C0 : data_out <= right_bar_y[9:2];
+          16'h44B0 : data_out <= {7'b0,stage};
+          16'h44A0 : data_out <= {7'b0,restart};
+          16'h4490 : data_out <= {4'b0,left_score};
+          16'h4480 : data_out <= {7'b0,right_score};
+          16'h4470 : data_out <= timer;
+          16'h4460 : data_out <= {7'b0,ball_speed_x};
+          16'h4450 : data_out <= {7'b0,ball_speed_y};
+          16'h4440 : data_out <= {6'b0,player1Action};
+          16'h4430 : data_out <= {6'b0,player2Action};
+          default : data_out <= mem[address];
+      endcase
 end
 
 //Mem Mapping for write
 always @(posedge clk)
 begin : MEM_WRITE
-    if (wr) begin
-                $display("%10d - MEM[%h] <- %h",$time, address, data);
-                mem[address]={data[7:0]};
-            end  
-    else begin
-        if(keycode[7:0] == 8'h29)
-            begin
-                state <= 1;
-            end 
+	if (wr) begin
+        case(address)
+            16'h44F0 : ball_x <= {data,2'b00};
+            16'h44E0 : ball_y <= {data,2'b00};
+            16'h44D0 : left_bar_y <= {data,2'b00};
+            16'h44C0 : right_bar_y <= {data,2'b00};
+            16'h44B0 : stage <= data[0];
+            16'h44A0 : restart <= data[0];
+            16'h4490 : left_score <= data[3:0];
+            16'h4480 : right_score <= data[3:0];
+            16'h4470 : timer <= data;
+            16'h4460 : ball_speed_x <= data[0];
+            16'h4450 : ball_speed_y <= data[0];
+            default: mem[address] <= data;
+        endcase		
+	end else begin
+        if(keycode[7:0] == 8'h29) begin
+            state <= 1;
         end
+	end
+ 
 end
 
 
