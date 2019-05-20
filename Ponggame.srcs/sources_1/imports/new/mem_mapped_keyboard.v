@@ -42,13 +42,18 @@ reg [15:0] addr = 16'b0000000000000000;
     reg [9:0] reg_x,reg_y = 12'b000000000000;
     reg state = 0;
     reg [11:0] topColor = 12'b000000000000;
-    wire [11:0] new_rgb;
+    wire [11:0] start_rgb;
+    wire [11:0] game_rgb;
+    wire [11:0] selectrgb;
     reg [9:0] rowNumber;
     
     vga_sync vga_sync_unit (clk,reset,hsync,vsync,video_on,p_tick,x,y);
-  //  blackOrWhite bOrW (x,y,10'b0101000000,10'b0011110000,10'b0001100100,10'b0001100100,10'b1000011100,10'b0011001000,new_rgb);
-    screenrom rom (new_rgb,x,y);
-    assign rgb = (video_on) ? new_rgb : 12'b0;
+    screenrom rom (start_rgb,x,y);
+    gamepongrgb pong (x,y,10'b0101000000,10'b0011110000,10'b0001100100,10'b0001100100,game_rgb);
+    assign selectrgb = (state) ? start_rgb : game_rgb;
+    assign rgb = (video_on) ? selectrgb : 12'b0;
+   
+   // assign rgb = (video_on) ? new_rgb : 12'b0;
 //END VGA block        
 
 //Memory
@@ -147,7 +152,13 @@ begin : MEM_WRITE
     if (wr) begin
                 $display("%10d - MEM[%h] <- %h",$time, address, data);
                 mem[address]={data[7:0]};
-            end   
+            end  
+    else begin
+        if(keycode[7:0] == 8'h29)
+            begin
+                state <= 1;
+            end 
+        end
 end
 
 
