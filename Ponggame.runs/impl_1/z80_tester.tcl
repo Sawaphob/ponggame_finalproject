@@ -65,16 +65,17 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.runs/synth_1/z80_tester.dcp}}
-  read_xdc {{C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.srcs/constrs_1/new/Basys3.xdc}}
+  add_files -quiet {{C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/synth_1/z80_tester.dcp}}
+  read_xdc {{C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/constrs_1/new/Basys3.xdc}}
   link_design -top z80_tester -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

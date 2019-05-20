@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Sawaphob Chavana/Desktop/hw-syn-lab-project-master/Z80.runs/impl_1'
+HD_PWD='C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -64,7 +64,7 @@ reg ball_speed_y = 1'b0;
     vga_sync vga_sync_unit (clk,reset,hsync,vsync,video_on,p_tick,x,y);
     screenrom rom (start_rgb,x,y);
     gamepongrgb pong (x,y,ball_x,ball_y,left_bar_y,right_bar_y,game_rgb);
-    assign selectrgb = (state) ? start_rgb : game_rgb;
+    assign selectrgb = (state) ? game_rgb : start_rgb;
     assign rgb = (video_on) ? selectrgb : 12'b0;
    
    // assign rgb = (video_on) ? new_rgb : 12'b0;

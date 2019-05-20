@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat May 18 22:44:34 2019
+| Date         : Mon May 20 13:32:20 2019
 | Host         : DESKTOP-5DO16DV running 64-bit major release  (build 9200)
 | Command      : report_drc -file z80_tester_drc_routed.rpt -pb z80_tester_drc_routed.pb -rpx z80_tester_drc_routed.rpx
 | Design       : z80_tester
@@ -24,18 +24,24 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
-+---------+----------+----------------------------+------------+
-| Rule    | Severity | Description                | Violations |
-+---------+----------+----------------------------+------------+
-| LUTLP-2 | Warning  | Combinatorial Loop Allowed | 1          |
-+---------+----------+----------------------------+------------+
+             Violations found: 2
++----------+----------+----------------------------+------------+
+| Rule     | Severity | Description                | Violations |
++----------+----------+----------------------------+------------+
+| LUTLP-2  | Warning  | Combinatorial Loop Allowed | 1          |
+| PDRC-153 | Warning  | Gated clock check          | 1          |
++----------+----------+----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 LUTLP-2#1 Warning
 Combinatorial Loop Allowed  
 206 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: cpu/ir_/DFFE_inst_latch_cf_i_2, cpu/ir_/DFFE_inst_latch_cf_i_5, cpu/ir_/DFFE_inst_latch_cf_i_14, cpu/ir_/DFFE_inst_latch_cf_i_21, cpu/ir_/DFFE_inst_latch_hf_i_2, cpu/ir_/DFFE_inst_latch_hf_i_6, cpu/ir_/DFFE_inst_latch_hf_i_15, cpu/ir_/DFFE_inst_latch_sf_i_3, cpu/ir_/DFFE_inst_latch_sf_i_12, cpu/ir_/DFFE_inst_latch_sf_i_29, cpu/ir_/DFFE_inst_latch_sf_i_42, cpu/ir_/flags_xf_i_2, cpu/ir_/flags_xf_i_4, cpu/ir_/flags_xf_i_11, cpu/ir_/flags_yf_i_2 (the first 15 of 206 listed).
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net mem/pong/wsStartX_reg[4]_i_2_n_0 is a gated clock net sourced by a combinational pin mem/pong/wsStartX_reg[4]_i_2/O, cell mem/pong/wsStartX_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

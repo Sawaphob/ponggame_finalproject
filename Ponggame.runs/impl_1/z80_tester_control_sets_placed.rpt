@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat May 18 22:42:18 2019
+| Date         : Mon May 20 13:30:39 2019
 | Host         : DESKTOP-5DO16DV running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file z80_tester_control_sets_placed.rpt
 | Design       : z80_tester
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |   223 |
-| Unused register locations in slices containing registers |   371 |
+| Number of unique control sets                            |   231 |
+| Unused register locations in slices containing registers |   379 |
 +----------------------------------------------------------+-------+
 
 
@@ -37,9 +37,9 @@ Table of Contents
 |      1 |           42 |
 |      2 |            1 |
 |      3 |            2 |
-|      4 |            4 |
+|      4 |            6 |
 |      5 |            3 |
-|      8 |           32 |
+|      8 |           38 |
 |      9 |            2 |
 |     10 |            2 |
 |     11 |            1 |
@@ -54,244 +54,252 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              80 |           62 |
-| No           | No                    | Yes                    |              38 |           24 |
+| No           | No                    | No                     |              88 |           68 |
+| No           | No                    | Yes                    |              38 |           25 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             313 |          124 |
-| Yes          | No                    | Yes                    |              49 |           29 |
-| Yes          | Yes                   | No                     |              13 |            4 |
+| Yes          | No                    | No                     |             361 |          157 |
+| Yes          | No                    | Yes                    |              49 |           26 |
+| Yes          | Yes                   | No                     |              13 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------+----------------------------------------------+---------------------------------------+------------------+----------------+
-|            Clock Signal            |                 Enable Signal                |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
-+------------------------------------+----------------------------------------------+---------------------------------------+------------------+----------------+
-|  genblk1[0].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[1].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[21].fdiv/clkDiv           |                                              |                                       |                1 |              1 |
-|  genblk1[2].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[10].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  genblk1[19].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  genblk1[20].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  genblk1[11].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  genblk1[6].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[5].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[8].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[4].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[3].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[7].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[14].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  genblk1[16].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  genblk1[13].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  genblk1[12].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  genblk1[9].fdiv/clkDiv_reg_0      |                                              |                                       |                1 |              1 |
-|  genblk1[15].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  genblk1[17].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-|  fpga_reset_reg_i_1_n_0            |                                              | cpu/fpga_reset                        |                1 |              1 |
-|  mem/genblk1[6].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  genblk1[18].fdiv/clkDiv_reg_0     |                                              |                                       |                1 |              1 |
-| ~fpga_reset_reg_i_1_n_0            |                                              | cpu/fpga_reset                        |                1 |              1 |
-|  mem/genblk1[0].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  mem/genblk1[15].fdiv/clkDiv_reg_0 |                                              |                                       |                1 |              1 |
-|  mem/genblk1[12].fdiv/clkDiv_reg_0 |                                              |                                       |                1 |              1 |
-|  mem/genblk1[16].fdiv/clkDiv_reg_0 |                                              |                                       |                1 |              1 |
-|  mem/genblk1[10].fdiv/clkDiv_reg_0 |                                              |                                       |                1 |              1 |
-|  mem/genblk1[11].fdiv/clkDiv_reg_0 |                                              |                                       |                1 |              1 |
-|  mem/genblk1[14].fdiv/clkDiv_reg_0 |                                              |                                       |                1 |              1 |
-|  mem/genblk1[13].fdiv/clkDiv_reg_0 |                                              |                                       |                1 |              1 |
-|  mem/genblk1[2].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  mem/genblk1[1].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  mem/genblk1[4].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  mem/genblk1[17].fdiv/clkDiv       |                                              |                                       |                1 |              1 |
-|  mem/genblk1[3].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  mem/genblk1[5].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  mem/genblk1[9].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  mem/genblk1[7].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  mem/genblk1[8].fdiv/clkDiv_reg_0  |                                              |                                       |                1 |              1 |
-|  mem/fdivTarget/CLK                |                                              |                                       |                1 |              2 |
-|  clk_IBUF_BUFG                     |                                              |                                       |                3 |              3 |
-| ~fpga_reset_reg_i_1_n_0            |                                              |                                       |                2 |              3 |
-| ~mem/uut/db_clk/O_reg_0            | mem/uut/cnt                                  | mem/uut/cnt[3]_i_1_n_0                |                1 |              4 |
-|  clk_IBUF_BUFG                     |                                              | reset_IBUF                            |                3 |              4 |
-| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/SYNTHESIZED_WIRE_20           | cpu/execute_/ctl_alu_op1_sel_zero     |                2 |              4 |
-| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/opcode_reg[3]_2[0]            |                                       |                2 |              4 |
-|  CLK50MHZ                          | mem/uut/db_data/count[4]_i_2__0_n_0          | mem/uut/db_data/count[4]_i_1__0_n_0   |                1 |              5 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/ena_M                         | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |                4 |              5 |
-|  fpga_reset_reg_i_1_n_0            | cpu/execute_/ctl_alu_op_low                  |                                       |                4 |              5 |
-|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_exx_reg_0[0]                    |                                       |                2 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_exx_reg_1[0]                    |                                       |                4 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_hl_de1_reg_1[0]                 |                                       |                2 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_exx_reg[0]                      |                                       |                2 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_hl_de1_reg_0[0]                 |                                       |                5 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_hl_de1_reg_2[0]                 |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_inst4_reg_1[0]           |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_T5_ff_reg_10[0]          |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_T5_ff_reg_8[0]           |                                       |                2 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_T5_ff_reg_9[0]           |                                       |                5 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_inst4_reg[0]             |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_inst4_reg_0[0]           |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_inst4_reg_2[0]           |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_exx_reg_2[0]             |                                       |                2 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_af_reg_0[0]              |                                       |                4 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_af_reg_1[0]              |                                       |                2 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_exx_reg_0[0]             |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_af_reg[0]                |                                       |                2 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_exx_reg[0]               |                                       |                4 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_exx_reg_1[0]             |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/latch[7]_i_3__0_4[0]          |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/latch[7]_i_3__0_2[0]          |                                       |                4 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/latch[7]_i_3__0_0[0]          |                                       |                3 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/opcode_reg[4][0]              |                                       |                4 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/opcode_reg[4]_0[0]            |                                       |                4 |              8 |
-| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_T3_ff_reg_2[0]           |                                       |                3 |              8 |
-| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/opcode_reg[3]_1[0]            |                                       |                4 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/E[0]                          |                                       |                3 |              8 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[6]_0   |                                       |                2 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/execute_/DFFE_T1_ff_reg_0[0]             | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |                6 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/ir_/E[0]                                 |                                       |                4 |              8 |
-|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_hl_de1_reg[0]                   |                                       |                3 |              8 |
-| ~mem/uut/db_clk/O_reg_0            |                                              |                                       |                3 |              9 |
-| ~fpga_reset_reg_i_1_n_0            |                                              | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |                3 |              9 |
-|  clk_IBUF_BUFG                     | mem/vga_sync_unit/h_count_reg[9]_i_1_n_0     | reset_IBUF                            |                5 |             10 |
-|  clk_IBUF_BUFG                     | mem/vga_sync_unit/v_count_reg0               | reset_IBUF                            |                4 |             10 |
-|  CLK50MHZ                          |                                              |                                       |                4 |             11 |
-|  fpga_reset_reg_i_1_n_0            |                                              |                                       |                9 |             12 |
-|  clk_IBUF_BUFG                     | mem/uut/E[0]                                 |                                       |                5 |             16 |
-|  CLK50MHZ                          | mem/uut/oflag_i_1_n_0                        |                                       |                5 |             16 |
-|  fpga_reset_reg_i_1_n_0            | cpu/execute_/E[0]                            | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |               10 |             16 |
-|  fpga_reset_reg_i_1_n_0            |                                              | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |               16 |             23 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[12]_3  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_6  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_8  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_14 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_19 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_1  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_13 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_4  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_6  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_12 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_7  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_5  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_8  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_15 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_17 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_3  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_18 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_7  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_1  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_13 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_1  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_4  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_1  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_10 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_3  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_13 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_16 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_2  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_2  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_10 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_11 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_9  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_2  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_14 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_3  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_11 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_2  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_0  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_11 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_7  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[14]_1  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_15 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_12 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_18 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_9  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_5  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_10 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[12]_4  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[12]_2  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_1   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_31 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_2   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_6  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_60 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_36 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_4  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_3   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_54 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_29 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_39 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_4   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_52 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_25 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_55 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_41 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_38 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_57 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_59 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_8   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_8   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_5   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_12  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_11  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_4   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_7   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_1   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_2   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_9   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_3   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_10  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_6   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_17 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_4  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_6  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_21 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_12 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_16 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_6   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_5  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_62 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[12]_1  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_42 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_43 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_44 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_51 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_48 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_24 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_26 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_33 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_50 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_58 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_30 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_20 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_23 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_63 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_56 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_53 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_61 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_47 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_7  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_46 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_32 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_3  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_5  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_27 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_9  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_40 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_8  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_37 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_35 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_5   |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_34 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_49 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[14]_2  |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_22 |                                       |                8 |             32 |
-| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_M1_ff_reg_0[0]           |                                       |               13 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_45 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_28 |                                       |                8 |             32 |
-|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_7   |                                       |                8 |             32 |
-+------------------------------------+----------------------------------------------+---------------------------------------+------------------+----------------+
++------------------------------------+-----------------------------------------------+---------------------------------------+------------------+----------------+
+|            Clock Signal            |                 Enable Signal                 |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++------------------------------------+-----------------------------------------------+---------------------------------------+------------------+----------------+
+|  genblk1[0].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[19].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[1].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[10].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[20].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[21].fdiv/clkDiv           |                                               |                                       |                1 |              1 |
+|  genblk1[2].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[11].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[4].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[6].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[8].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[3].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[7].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[5].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[14].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[16].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[9].fdiv/clkDiv_reg_0      |                                               |                                       |                1 |              1 |
+|  genblk1[15].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[13].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[12].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[17].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  genblk1[18].fdiv/clkDiv_reg_0     |                                               |                                       |                1 |              1 |
+|  mem/genblk1[9].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+| ~fpga_reset_reg_i_1_n_0            |                                               | cpu/fpga_reset                        |                1 |              1 |
+|  mem/genblk1[0].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+|  fpga_reset_reg_i_1_n_0            |                                               | cpu/fpga_reset                        |                1 |              1 |
+|  mem/genblk1[10].fdiv/clkDiv_reg_0 |                                               |                                       |                1 |              1 |
+|  mem/genblk1[16].fdiv/clkDiv_reg_0 |                                               |                                       |                1 |              1 |
+|  mem/genblk1[13].fdiv/clkDiv_reg_0 |                                               |                                       |                1 |              1 |
+|  mem/genblk1[15].fdiv/clkDiv_reg_0 |                                               |                                       |                1 |              1 |
+|  mem/genblk1[14].fdiv/clkDiv_reg_0 |                                               |                                       |                1 |              1 |
+|  mem/genblk1[17].fdiv/clkDiv_reg_0 |                                               |                                       |                1 |              1 |
+|  mem/genblk1[12].fdiv/clkDiv_reg_0 |                                               |                                       |                1 |              1 |
+|  mem/genblk1[11].fdiv/clkDiv_reg_0 |                                               |                                       |                1 |              1 |
+|  mem/genblk1[4].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+|  mem/genblk1[2].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+|  mem/genblk1[3].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+|  mem/genblk1[1].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+|  mem/genblk1[6].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+|  mem/genblk1[5].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+|  mem/genblk1[8].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+|  mem/genblk1[7].fdiv/clkDiv_reg_0  |                                               |                                       |                1 |              1 |
+|  mem/fdivTarget/CLK                |                                               |                                       |                1 |              2 |
+|  mem/pong/wsStartX_reg[4]_i_2_n_0  |                                               |                                       |                2 |              3 |
+| ~fpga_reset_reg_i_1_n_0            |                                               |                                       |                1 |              3 |
+| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/opcode_reg[3]_2[0]             |                                       |                2 |              4 |
+| ~mem/uut/db_clk/O_reg_0            | mem/uut/cnt                                   | mem/uut/cnt[3]_i_1_n_0                |                1 |              4 |
+|  clk_IBUF_BUFG                     |                                               | reset_IBUF                            |                3 |              4 |
+| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/SYNTHESIZED_WIRE_20            | cpu/execute_/ctl_alu_op1_sel_zero     |                1 |              4 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[5]_1[0] |                                       |                4 |              4 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/E[0]                        |                                       |                4 |              4 |
+|  fpga_reset_reg_i_1_n_0            | cpu/execute_/ctl_alu_op_low                   |                                       |                4 |              5 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/ena_M                          | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |                5 |              5 |
+|  CLK50MHZ                          | mem/uut/db_data/count[4]_i_2__0_n_0           | mem/uut/db_data/count[4]_i_1__0_n_0   |                1 |              5 |
+|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_hl_de1_reg_0[0]                  |                                       |                2 |              8 |
+|  clk_IBUF_BUFG                     |                                               |                                       |                7 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_exx_reg_0[0]                     |                                       |                4 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_T5_ff_reg_8[0]            |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_inst4_reg[0]              |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_T5_ff_reg_9[0]            |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_inst4_reg_1[0]            |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_af_reg_0[0]               |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/E[0]                           |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_exx_reg[0]                |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_exx_reg_2[0]              |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_inst4_reg_2[0]            |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_inst4_reg_0[0]            |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_af_reg[0]                 |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_af_reg_1[0]               |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_exx_reg_0[0]              |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/bank_exx_reg_1[0]              |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/latch[7]_i_3__0_2[0]           |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/latch[7]_i_3__0_4[0]           |                                       |                5 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/latch[7]_i_3__0_0[0]           |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/opcode_reg[4]_0[0]             |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/opcode_reg[4][0]               |                                       |                2 |              8 |
+| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_T3_ff_reg_2[0]            |                                       |                4 |              8 |
+| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/opcode_reg[3]_1[0]             |                                       |                4 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_T5_ff_reg_10[0]           |                                       |                6 |              8 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[6]_0    |                                       |                2 |              8 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[5]_2[0] |                                       |                7 |              8 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[4]_2[0] |                                       |                5 |              8 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[4]_3[0] |                                       |                8 |              8 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[5]_3[0] |                                       |                8 |              8 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[4]_1[0] |                                       |                7 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/execute_/DFFE_T1_ff_reg_0[0]              | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_hl_de1_reg_1[0]                  |                                       |                3 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_exx_reg[0]                       |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/ir_/E[0]                                  |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_hl_de1_reg_2[0]                  |                                       |                2 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_exx_reg_1[0]                     |                                       |                4 |              8 |
+|  fpga_reset_reg_i_1_n_0            | cpu/ir_/bank_hl_de1_reg[0]                    |                                       |                4 |              8 |
+| ~mem/uut/db_clk/O_reg_0            |                                               |                                       |                3 |              9 |
+| ~fpga_reset_reg_i_1_n_0            |                                               | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |                5 |              9 |
+|  clk_IBUF_BUFG                     | mem/vga_sync_unit/h_count_reg[9]_i_1_n_0      | reset_IBUF                            |                4 |             10 |
+|  clk_IBUF_BUFG                     | mem/vga_sync_unit/v_count_reg0                | reset_IBUF                            |                6 |             10 |
+|  CLK50MHZ                          |                                               |                                       |                5 |             11 |
+|  fpga_reset_reg_i_1_n_0            |                                               |                                       |                9 |             12 |
+|  clk_IBUF_BUFG                     | mem/uut/E[0]                                  |                                       |                4 |             16 |
+|  CLK50MHZ                          | mem/uut/keycode[15]_i_1_n_0                   |                                       |                3 |             16 |
+|  fpga_reset_reg_i_1_n_0            | cpu/execute_/E[0]                             | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |                8 |             16 |
+|  fpga_reset_reg_i_1_n_0            |                                               | cpu/resets_/SYNTHESIZED_WIRE_12_reg_0 |               15 |             23 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_6   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_14  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_4   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_4   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_8   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[14]_1   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_16  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_5   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_18  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_6   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[12]_3   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_10  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_13  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_3   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_1   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_14  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[14]_0   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_7   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_1   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_3   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_7   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_3   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_2   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_13  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_11  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_4   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[12]_1   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_15  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_17  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_9   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[12]_4   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[12]_2   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_10  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_12  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_5   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_5   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_9   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[13]_6   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_10  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_0   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_1   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_11  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_12  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_13  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_1   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_4   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_28  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_59  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_38  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_26  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_60  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_58  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_35  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_22  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_7   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_23  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_4    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_11   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_12   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_6    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_5    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_2    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_8    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_3    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_1    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_9    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_6    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_1    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_4    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_2    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_7    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_5    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_45  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[8]_7    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_10   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_8    |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_40  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_31  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_36  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_49  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_3   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_50  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_43  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_2   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_15  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_8   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_11  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_2   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_18  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[11]_7   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_39  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_24  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_53  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_55  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_56  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_34  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_25  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_6   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_63  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_16  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_46  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_8   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_54  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_51  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_2   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_61  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_17  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_57  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_27  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_47  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_48  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_5   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_52  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_9   |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_44  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_42  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_29  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_33  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_41  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_20  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_21  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_37  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[10]_12  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_32  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_30  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_62  |                                       |                8 |             32 |
+| ~fpga_reset_reg_i_1_n_0            | cpu/sequencer_/DFFE_M1_ff_reg_0[0]            |                                       |               14 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[15]_19  |                                       |                8 |             32 |
+|  clk_IBUF_BUFG                     | cpu/address_pins_/DFFE_apin_latch_reg[9]_3    |                                       |                8 |             32 |
++------------------------------------+-----------------------------------------------+---------------------------------------+------------------+----------------+
 
 
