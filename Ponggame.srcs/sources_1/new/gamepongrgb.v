@@ -29,47 +29,57 @@ module gamepongrgb(
     wire [4:0] wsSegment;
     wire [19:0] segments;
     
-    whichSegment ws (posX,y,wsStartX,wsStartY,wsSegment);
+    whichSegment ws (posX,posY,wsStartX,wsStartY,wsSegment);
     pixelSegment pS(segments,score);
     
-    always @(*) begin
-    if( (posX >= ballX && posX <= ballX+BALLSIZE) && (posY >= ballY && posY <= ballY+BALLSIZE) ) 
-    begin
-        color <= 12'hFFF;
-    end else if (  (posX >= paddleLeftPosX && posX <= paddleLeftPosX + PADDLEWIDTH ) && (posY >= paddleLeftPosY && posY <= paddleLeftPosY + PADDLEHEIGHT ))  begin
-        color <= 12'hFFF;
-    end else if (  (posX >= paddleRightPosX && posX <= paddleRightPosX + PADDLEWIDTH ) && (posY >= paddleRightPosY && posY <= paddleRightPosY + PADDLEHEIGHT )) begin
-        color <= 12'hFFF;
-    end 
+    always @(*) 
+        begin
+            if( (posX >= ballX && posX <= ballX+BALLSIZE) && (posY >= ballY && posY <= ballY+BALLSIZE) ) 
+                begin
+                    color <= 12'hFFF;
+                end 
+            else if ((posX >= paddleLeftPosX && posX <= paddleLeftPosX + PADDLEWIDTH ) && (posY >= paddleLeftPosY && posY <= paddleLeftPosY + PADDLEHEIGHT ))  
+                begin
+                    color <= 12'hFFF;
+                end 
+            else if ((posX >= paddleRightPosX && posX <= paddleRightPosX + PADDLEWIDTH ) && (posY >= paddleRightPosY && posY <= paddleRightPosY + PADDLEHEIGHT )) 
+                begin
+                    color <= 12'hFFF;
+                end 
     // ----------------- Score Player1 -----------------
-    else if ( (posX >= scoreLeftPosX && posX <= scoreLeftPosX+SCOREWIDTH) &&  (posY >= scoreLeftPosY && posY <= scoreLeftPosY+SCOREHEIGHT)) begin
-        wsStartX <= scoreLeftPosX;
-        wsStartY <= scoreLeftPosY;
-        score <= 5'b00000;
-        if(segments[wsSegment] == 1'b1) begin
-            color <= 12'hFFF;
-        end else begin
-            color <= 12'hFFF;
-        end
-    end 
-    
+        else if ( (posX >= scoreLeftPosX && posX <= scoreLeftPosX+SCOREWIDTH) &&  (posY >= scoreLeftPosY && posY <= scoreLeftPosY+SCOREHEIGHT)) 
+            begin
+                wsStartX <= scoreLeftPosX;
+                wsStartY <= scoreLeftPosY;
+                score <= 5'b00000;
+                if(segments[wsSegment] == 1'b1)
+                    begin
+                        color <= 12'hFFF;
+                    end 
+                else 
+                    begin
+                        color <= 12'hFFF;
+                    end
+            end 
     // ----------------- Score Player2 -----------------
-    else if ( (posX >= scoreRightPosX && posX <= scoreRightPosX+SCOREWIDTH) && (posY >= scoreRightPosY && posY <= scoreRightPosY+SCOREHEIGHT)) begin
-        wsStartX <= scoreRightPosX;
-        wsStartY <= scoreRightPosY;
-        score <= 5'b00000;
-        if(segments[wsSegment] == 1'b1) begin
-            color <= 12'hFFF;
-        end else begin
-            color <= 12'hFFF;
+        else if ( (posX >= scoreRightPosX && posX <= scoreRightPosX+SCOREWIDTH) && (posY >= scoreRightPosY && posY <= scoreRightPosY+SCOREHEIGHT)) 
+            begin
+                wsStartX <= scoreRightPosX;
+                wsStartY <= scoreRightPosY;
+                score <= 5'b00000;
+                if(segments[wsSegment] == 1'b1) 
+                    begin
+                        color <= 12'hFFF;
+                    end 
+                else 
+                    begin
+                        color <= 12'hFFF;
+                    end
+            end 
+    
+        else 
+            begin
+                color<=12'h000;
+            end
         end
-    end 
-    
-    else begin
-        color<=12'h000;
-    end
-    
-    end
-    
-
 endmodule

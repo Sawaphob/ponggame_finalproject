@@ -1134,3 +1134,75 @@ selectCodeEditor("mem_mapped_keyboard.v", 139, 178); // cl (w, cp)
 selectCodeEditor("mem_mapped_keyboard.v", 204, 350); // cl (w, cp)
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 305 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gamepongrgb.v", 0); // k (j, cp)
+selectCodeEditor("gamepongrgb.v", 525, 156); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 427, 158); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("gamepongrgb.v", 207, 137); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 258, 212); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 275, 245); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 273, 336); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 322, 285); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 194, 397); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 281, 291); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 367, 214); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 206, 202); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 213, 219); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("gamepongrgb.v", 145, 111); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 134, 41); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 140, 86); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 142, 173); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 203, 193); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 271, 176); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 271, 176); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 379, 131); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 355, 235); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("gamepongrgb.v", 180, 146); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectCodeEditor("gamepongrgb.v", 452, 399); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("gamepongrgb.v", 452, 399); // cl (w, cp)
+selectCodeEditor("gamepongrgb.v", 114, 291); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("gamepongrgb.v", 37, 194); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 72 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 48 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 75 seconds
+selectCodeEditor("gamepongrgb.v", 13, 386); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
