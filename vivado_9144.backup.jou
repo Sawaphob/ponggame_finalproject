@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 21 07:57:23 2019
+# Process ID: 9144
+# Current directory: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1416 C:\Users\Sawaphob Chavana\Desktop\ponggame_finalproject\Ponggame.xpr
+# Log file: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/vivado.log
+# Journal file: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.xpr}
+update_compile_order -fileset sources_1
+update_files -from_files {{C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/main.v}} -to_files {{C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.srcs/sources_1/new/z80_tester.v}} -filesets [get_filesets *]

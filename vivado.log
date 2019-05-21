@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon May 20 22:07:37 2019
-# Process ID: 3008
+# Start of session at: Tue May 21 08:48:22 2019
+# Process ID: 5004
 # Current directory: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1360 C:\Users\Sawaphob Chavana\Desktop\ponggame_finalproject\Ponggame.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3228 C:\Users\Sawaphob Chavana\Desktop\ponggame_finalproject\Ponggame.xpr
 # Log file: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/vivado.log
 # Journal file: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject\vivado.jou
 #-----------------------------------------------------------
@@ -16,26 +16,4 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 731.359 ; gain = 123.074
-update_compile_order -fileset sources_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Mon May 20 22:08:24 2019] Launched impl_1...
-Run output will be captured here: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-INFO: [Netlist 29-17] Analyzing 4212 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2018.3
-INFO: [Common 17-344] 'open_run' was cancelled
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Mon May 20 22:10:33 2019] Launched impl_1...
-Run output will be captured here: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/impl_1/runme.log
-reset_run impl_1 -prev_step 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Mon May 20 22:15:08 2019] Launched synth_1...
-Run output will be captured here: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/synth_1/runme.log
-[Mon May 20 22:15:08 2019] Launched impl_1...
-Run output will be captured here: C:/Users/Sawaphob Chavana/Desktop/ponggame_finalproject/Ponggame.runs/impl_1/runme.log
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 743.801 ; gain = 120.480

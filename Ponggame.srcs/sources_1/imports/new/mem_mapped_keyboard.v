@@ -14,7 +14,7 @@ module mem_mapped_keyboard(
 	output wire [11:0] rgb,
 	output reg [1:0] player1Action = 2'b0,
 	output reg [1:0] player2Action = 2'b0,
-	output state
+	output stage
 );
     
     parameter DATA_WIDTH=8;
@@ -50,6 +50,7 @@ module mem_mapped_keyboard(
     wire [9:0] x,y;
     reg [9:0] reg_x,reg_y = 12'b000000000000;
     reg state = 1'b0;
+    reg stage = 1'b0;
     reg [11:0] topColor = 12'b000000000000;
     wire [11:0] start_rgb;
     wire [11:0] game_rgb;
@@ -58,8 +59,8 @@ module mem_mapped_keyboard(
         
     vga_sync vga_sync_unit (clk,reset,hsync,vsync,video_on,p_tick,x,y);
     screenrom rom (start_rgb,x,y);
-    gamepongrgb pong (x,y,ballPosX,ballPosY,leftPaddlePos,rightPaddlePos,game_rgb);
-    assign selectrgb = (state) ? game_rgb : start_rgb;
+    gamepongrgb pong (x,y,ballPosX,ballPosY,leftPaddlePos,rightPaddlePos,left_score,right_score,game_rgb);
+    assign selectrgb = (stage) ? game_rgb : start_rgb;
     assign rgb = (video_on) ? selectrgb : 12'b0;
     
     reg	[7:0]	mem[0:1<<ADDR_WIDTH - 1];
@@ -179,7 +180,7 @@ module mem_mapped_keyboard(
                 16'h44B0 : data_out <= {7'b0000000,state};
                 16'h44A0 : data_out <= {7'b0000000,resetgame};
                 16'h4490 : data_out <= {4'b0000,left_score};
-                16'h4480 : data_out <= {7'b0000000,right_score};
+                16'h4480 : data_out <= {4'b0000,right_score};
                 16'h4470 : data_out <= timer;
                 16'h4460 : data_out <= {7'b0000000,acceralationX};
                 16'h4450 : data_out <= {7'b0000000,acceralationY};
@@ -210,13 +211,15 @@ module mem_mapped_keyboard(
                 end
             else 
                 begin
-                    if(keycode[7:0] == 8'h29 && state == 1'b0) // press spacebar to start
+                    if(keycode[7:0] == 8'h29 && stage == 1'b0) // press spacebar to start
                         begin
                             state = 1'b1;
+                            stage = 1'b1;
                         end
                     if(btnU && state == 1'b1)
                         begin
-                            state = 1'b0;
+                            stage = 1'b0;
+                            resetgame=1;
                         end
                 end
         end

@@ -1,0 +1,16 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -y 320 -defaultsOSRD
+preplace inst main_0 -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -y 160 -defaultsOSRD
+preplace netloc clk_wiz_locked 1 1 1 270
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 3 30 250 260J 260 610
+preplace netloc clk_wiz_clk_out1 1 0 2 20 240 250
+levelinfo -pg 1 0 140 440 630 -top 0 -bot 390
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}
